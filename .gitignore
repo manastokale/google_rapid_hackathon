@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+data/
+*.env
+
+# Node
+node_modules/
+frontend/dist/
+.next/
+
+# Runtime
+.run/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# GCP
+*.json.key
+service-account.json
