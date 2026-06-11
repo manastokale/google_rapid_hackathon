@@ -19,6 +19,7 @@ class Settings(BaseSettings):
     bq_raw_dataset: str = ""
     bq_analytics_dataset: str = "margintrust_analytics"
     google_application_credentials: str = ""
+    google_application_credentials_json: str = ""
     fivetran_mcp_mode: str = "mock"
     fivetran_api_key: str = ""
     fivetran_api_secret: str = ""

@@ -97,6 +97,36 @@ npm run dev
 
 Open `http://localhost:5173`.
 
+## Vercel
+
+This repository can deploy as one Vercel project:
+
+- React/Vite frontend is built from `frontend/` and served from `/`.
+- FastAPI backend is exposed through the Vercel Python function at `/api/*`.
+- The default CSV-backed demo runs without BigQuery credentials when `USE_BIGQUERY=false`.
+
+Deploy from the repository root:
+
+```bash
+npm install -g vercel
+vercel
+```
+
+Recommended Vercel environment variables:
+
+| Variable | Required? | Use |
+|---|---:|---|
+| `GEMINI_API_KEY` | Optional | Enables the Gemini/Google ADK agent path. Without it, the deterministic local fallback responds. |
+| `GEMINI_MODEL` | No | Defaults to `gemini-2.5-flash`. |
+| `USE_BIGQUERY` | No | Keep `false` for the bundled synthetic CSV demo. Set `true` only after BigQuery datasets and analytics views exist. |
+| `BQ_PROJECT_ID` | BigQuery only | Google Cloud project for BigQuery reads. |
+| `BQ_RAW_DATASET` | BigQuery only | Raw dataset name. Defaults through `BIGQUERY_DATASET`. |
+| `BQ_ANALYTICS_DATASET` | BigQuery only | Analytics views dataset. Defaults to `margintrust_analytics`. |
+| `GOOGLE_APPLICATION_CREDENTIALS_JSON` | BigQuery only | Service-account JSON pasted as a Vercel secret. Prefer this over file paths on Vercel. |
+| `FRONTEND_URL` | No | Your production URL if you call the API cross-origin. Same-origin `/api` calls do not require it. |
+
+The Vercel build uses `vercel.json`, root `requirements.txt`, and `api/index.py`. Keep deploying from the repository root, not from `frontend/` or `backend/`.
+
 ## Demo Prompts
 
 - Are we underbilling any enterprise customers this week?
@@ -161,3 +191,5 @@ Then leave `GOOGLE_APPLICATION_CREDENTIALS` blank and keep `BQ_PROJECT_ID` or `G
 ## License
 
 MIT
+
+

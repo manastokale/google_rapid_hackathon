@@ -1,0 +1,8 @@
+# Vercel installs Python dependencies from the repository root.
+fastapi==0.115.12
+google-adk>=1.0.0
+google-cloud-bigquery>=3.25.0
+google-genai>=1.0.0
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+python-dotenv>=1.0.0

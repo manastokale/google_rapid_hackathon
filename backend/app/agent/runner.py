@@ -23,15 +23,27 @@ _runner = None
 _session_service = None
 _adk_error: str | None = None
 
-try:
-    if settings.gemini_api_key:
+def _get_adk_runner():
+    global _runner, _session_service, _adk_error
+
+    if not settings.gemini_api_key:
+        return None, None
+    if _runner and _session_service:
+        return _runner, _session_service
+    if _adk_error:
+        return None, None
+
+    try:
         from google.adk.runners import InMemoryRunner
 
         agent = create_agent()
         _runner = InMemoryRunner(agent=agent, app_name="margintrust")
         _session_service = _runner.session_service
-except Exception as exc:
-    _adk_error = str(exc)
+    except Exception as exc:
+        _adk_error = str(exc)
+        return None, None
+
+    return _runner, _session_service
 
 
 def _money(value: float) -> str:
@@ -222,21 +234,22 @@ Executive Revenue Dashboard trust score: {overview['overall_trust_score']}/100."
 
 async def run_agent_query(user_message: str, session_id: str = "default") -> dict:
     """Send a message to the MarginTrust agent and return the response."""
-    if _runner and _session_service:
+    runner, session_service = _get_adk_runner()
+    if runner and session_service:
         try:
             from google.genai import types
 
-            session = await _session_service.get_session(
+            session = await session_service.get_session(
                 app_name="margintrust", user_id="user", session_id=session_id
             )
             if not session:
-                session = await _session_service.create_session(
+                session = await session_service.create_session(
                     app_name="margintrust", user_id="user", session_id=session_id
                 )
 
             user_content = types.Content(role="user", parts=[types.Part.from_text(text=user_message)])
             final_response = ""
-            async for event in _runner.run_async(
+            async for event in runner.run_async(
                 user_id="user", session_id=session.id, new_message=user_content
             ):
                 if event.is_final_response() and event.content and event.content.parts:

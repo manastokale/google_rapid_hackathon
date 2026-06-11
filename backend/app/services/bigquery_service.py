@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -26,6 +27,11 @@ def _should_use_bigquery() -> bool:
 def _client():
     from google.cloud import bigquery
     from google.oauth2 import service_account
+
+    if settings.google_application_credentials_json:
+        service_account_info = json.loads(settings.google_application_credentials_json)
+        credentials = service_account.Credentials.from_service_account_info(service_account_info)
+        return bigquery.Client(project=PROJECT_ID, credentials=credentials)
 
     if settings.google_application_credentials:
         path = Path(settings.google_application_credentials).expanduser()
