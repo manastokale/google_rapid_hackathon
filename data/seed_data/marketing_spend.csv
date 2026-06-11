@@ -1,0 +1,822 @@
+spend_id,campaign_name,channel,spend_amount,attributed_revenue,leads_generated,spend_date,source_system
+51928562-112,Customer Proof Campaign,email,808.77,1907.9,74,2025-07-10,marketing_platform
+dd37d0f4-e1d,RevOps Field Dinner,webinars,4099.57,1872.6,7,2025-07-10,marketing_platform
+cd58f649-691,Partner Co-Marketing,webinars,6511.94,21849.57,44,2025-07-10,marketing_platform
+ae0be3cb-3a0,LinkedIn ABM Campaign,content_marketing,6416.89,20884.73,49,2025-07-10,marketing_platform
+a0236df1-2fc,Cloud Analytics Content Hub,email,1519.3,4890.67,30,2025-07-10,marketing_platform
+44b2c7d0-fe5,Usage Expansion Plays,events,8493.54,5462.22,18,2025-07-10,marketing_platform
+90add311-3ef,Product-Led Growth Retargeting,content_marketing,3573.25,3866.87,15,2025-07-10,marketing_platform
+a1653798-6be,Google Ads - Brand,email,9301.55,24984.42,14,2025-07-10,marketing_platform
+8cfdf811-2bc,Competitive Takeout,linkedin,2512.72,2680.53,36,2025-07-10,marketing_platform
+871daa35-3a5,Email Nurture - Enterprise,webinars,878.45,2501.66,24,2025-07-10,marketing_platform
+140030a8-366,Email Nurture - Enterprise,email,3227.02,6249.78,67,2025-07-09,marketing_platform
+a8db18af-614,Cloud Analytics Content Hub,linkedin,381.85,1214.58,51,2025-07-09,marketing_platform
+3bfdf77d-a02,Usage Expansion Plays,content_marketing,1473.18,4994.07,56,2025-07-09,marketing_platform
+012019ce-0a0,Analyst Report Sponsorship,linkedin,1654.09,3545.88,2,2025-07-09,marketing_platform
+dc638993-2c1,Developer Community Events,content_marketing,507.86,577.49,28,2025-07-09,marketing_platform
+8ec1a934-6bc,Partner Co-Marketing,email,9131.52,18211.7,18,2025-07-09,marketing_platform
+9a6191ad-e43,Competitive Takeout,linkedin,9381.03,21779.75,37,2025-07-09,marketing_platform
+bacfce42-8ad,Google Ads - Product,email,7612.42,7654.33,6,2025-07-09,marketing_platform
+3696a9a1-3ea,RevOps Field Dinner,linkedin,7740.18,13451.64,30,2025-07-09,marketing_platform
+1ca2c67f-e2b,Enterprise Webinar Series,content_marketing,4527.85,6368.57,48,2025-07-08,marketing_platform
+d1d94fa5-397,Finance Leader Roundtable,google_ads,7265.84,8675.36,16,2025-07-08,marketing_platform
+6282abe8-38f,Analyst Report Sponsorship,content_marketing,7023.82,6079.18,31,2025-07-08,marketing_platform
+e531f063-a1c,Usage Expansion Plays,email,3781.45,3362.54,24,2025-07-08,marketing_platform
+29edef8d-453,Developer Community Events,email,4969.65,6181.98,73,2025-07-08,marketing_platform
+820089e0-1ab,Customer Proof Campaign,webinars,7551.35,18192.59,66,2025-07-08,marketing_platform
+639c26ae-af4,Email Nurture - Enterprise,events,316.01,330.16,22,2025-07-08,marketing_platform
+367c8a9a-98b,RevOps Field Dinner,google_ads,8509.16,18492.39,71,2025-07-08,marketing_platform
+2f23f204-0cc,Annual User Conference,email,2776.36,1328.94,58,2025-07-08,marketing_platform
+fd9045fa-5d0,Product-Led Growth Retargeting,email,3696.15,2141.61,22,2025-07-08,marketing_platform
+96fb61bc-6f3,Competitive Takeout,google_ads,5406.8,9172.55,11,2025-07-08,marketing_platform
+7b35169c-aaf,Google Ads - Brand,content_marketing,5912.82,19689.0,63,2025-07-08,marketing_platform
+43ff66c6-cc2,Google Ads - Brand,email,3755.01,5413.33,1,2025-07-07,marketing_platform
+0369bcd1-50a,Analyst Report Sponsorship,email,7525.72,11236.11,53,2025-07-07,marketing_platform
+46d0bb67-9ce,Email Nurture - Enterprise,content_marketing,2904.59,7719.19,19,2025-07-07,marketing_platform
+8b92d680-c50,RevOps Field Dinner,email,7820.48,5073.79,46,2025-07-07,marketing_platform
+d33cc674-811,Product-Led Growth Retargeting,google_ads,9046.14,12205.53,69,2025-07-07,marketing_platform
+60a1ca56-c97,Enterprise Webinar Series,events,2135.28,1534.42,46,2025-07-07,marketing_platform
+b9e9a60b-f2d,Partner Co-Marketing,webinars,4914.69,6843.07,39,2025-07-07,marketing_platform
+9faec4c6-3b0,RevOps Field Dinner,email,2551.61,6950.68,32,2025-07-06,marketing_platform
+e0182be8-b22,Google Ads - Product,events,4349.57,13058.52,17,2025-07-06,marketing_platform
+ba7586d4-e15,Competitive Takeout,webinars,5062.28,12301.03,12,2025-07-06,marketing_platform
+c93ffa88-bd4,Developer Community Events,events,8329.62,28022.38,16,2025-07-06,marketing_platform
+0f4dfab3-d72,Enterprise Webinar Series,google_ads,7791.16,6549.74,21,2025-07-06,marketing_platform
+1f302f35-189,Partner Co-Marketing,webinars,9061.45,29335.46,57,2025-07-06,marketing_platform
+6c65e2e8-0a2,LinkedIn ABM Campaign,webinars,7279.97,13795.6,11,2025-07-06,marketing_platform
+c9e21248-ec4,Email Nurture - Enterprise,email,4115.82,7076.09,62,2025-07-05,marketing_platform
+e0a048d9-b6e,Product-Led Growth Retargeting,events,1349.31,2030.78,2,2025-07-05,marketing_platform
+f14a94b5-2cb,RevOps Field Dinner,events,338.29,932.13,61,2025-07-05,marketing_platform
+7e83aee9-aff,Annual User Conference,events,8382.17,15246.21,61,2025-07-05,marketing_platform
+968e77c3-01a,Developer Community Events,email,3202.99,9367.72,31,2025-07-05,marketing_platform
+c42b56e7-47d,Partner Co-Marketing,content_marketing,685.93,1745.23,47,2025-07-05,marketing_platform
+ee38b8a9-718,Google Ads - Brand,events,789.39,501.83,54,2025-07-05,marketing_platform
+02516ac6-17e,Competitive Takeout,webinars,7076.87,9066.35,41,2025-07-05,marketing_platform
+42a7c07f-308,Enterprise Webinar Series,linkedin,3105.72,2203.76,27,2025-07-05,marketing_platform
+975bd1bb-a50,Finance Leader Roundtable,google_ads,8356.43,23509.71,17,2025-07-05,marketing_platform
+3f6a506f-eb4,Usage Expansion Plays,google_ads,3956.14,1661.44,5,2025-07-04,marketing_platform
+18b3ccb7-da0,Analyst Report Sponsorship,events,8011.35,19103.11,62,2025-07-04,marketing_platform
+c0e3318e-989,Enterprise Webinar Series,content_marketing,6305.99,18969.47,3,2025-07-04,marketing_platform
+1b6ceaf7-347,Google Ads - Brand,webinars,7988.23,19620.92,63,2025-07-04,marketing_platform
+37403b6b-403,Cloud Analytics Content Hub,google_ads,6481.18,8277.67,64,2025-07-04,marketing_platform
+3eac1d3f-d31,Customer Proof Campaign,google_ads,1042.45,3198.43,45,2025-07-04,marketing_platform
+f17ba573-76e,Competitive Takeout,email,4353.43,11867.93,22,2025-07-03,marketing_platform
+9cf40c6d-b8c,Email Nurture - Enterprise,google_ads,5361.93,7173.29,2,2025-07-03,marketing_platform
+cf4ff303-d93,Developer Community Events,webinars,5469.2,3151.77,10,2025-07-03,marketing_platform
+775b3cba-faa,Cloud Analytics Content Hub,google_ads,2005.65,1210.74,56,2025-07-03,marketing_platform
+cf516ece-222,Google Ads - Brand,email,8114.7,4620.77,15,2025-07-03,marketing_platform
+ee184eb8-1cf,Finance Leader Roundtable,content_marketing,9263.55,30254.98,4,2025-07-03,marketing_platform
+0e235084-b5e,LinkedIn ABM Campaign,content_marketing,5671.89,13499.61,22,2025-07-03,marketing_platform
+70082f58-135,Partner Co-Marketing,events,2845.5,7923.59,54,2025-07-03,marketing_platform
+f57b15fd-7a2,RevOps Field Dinner,email,6023.89,16980.3,64,2025-07-03,marketing_platform
+17de7e48-b14,Enterprise Webinar Series,linkedin,5434.19,3176.12,47,2025-07-03,marketing_platform
+902d0252-5fb,Customer Proof Campaign,linkedin,9399.82,29695.14,12,2025-07-03,marketing_platform
+b9c523fc-637,Annual User Conference,events,3613.28,11750.14,1,2025-07-03,marketing_platform
+5f52a8a9-337,Cloud Analytics Content Hub,content_marketing,4737.96,6378.0,30,2025-07-02,marketing_platform
+9507052f-f86,Usage Expansion Plays,email,9329.25,31239.56,53,2025-07-02,marketing_platform
+b80e549b-2c1,Analyst Report Sponsorship,events,6933.19,10337.07,40,2025-07-02,marketing_platform
+3d6073e8-c8d,LinkedIn ABM Campaign,webinars,401.48,839.85,62,2025-07-02,marketing_platform
+3fa56c89-992,Competitive Takeout,email,6610.48,7447.24,10,2025-07-02,marketing_platform
+1950b665-e74,Finance Leader Roundtable,google_ads,6589.86,4359.43,53,2025-07-02,marketing_platform
+76acf315-d7d,Product-Led Growth Retargeting,email,4842.17,13977.33,55,2025-07-02,marketing_platform
+118fcaa2-552,Annual User Conference,content_marketing,8146.69,16326.76,54,2025-07-02,marketing_platform
+b0a12e81-eb3,Google Ads - Product,webinars,5724.54,13365.97,13,2025-07-02,marketing_platform
+8976253c-1cc,Developer Community Events,linkedin,3344.93,7568.41,23,2025-07-02,marketing_platform
+ca3d31c0-052,Enterprise Webinar Series,webinars,7737.51,19457.76,52,2025-07-02,marketing_platform
+b1f350a0-91e,Partner Co-Marketing,content_marketing,9172.66,24427.29,34,2025-07-02,marketing_platform
+db083851-7ea,Product-Led Growth Retargeting,content_marketing,6228.55,14004.86,62,2025-07-01,marketing_platform
+743f9c3f-04b,Finance Leader Roundtable,events,742.43,1653.34,26,2025-07-01,marketing_platform
+4bdc88fa-3f0,RevOps Field Dinner,events,7765.55,17148.63,57,2025-07-01,marketing_platform
+2b55dd04-f3b,Developer Community Events,webinars,1054.35,423.84,11,2025-07-01,marketing_platform
+33aa9c1c-7bd,Customer Proof Campaign,email,4095.1,4303.29,25,2025-07-01,marketing_platform
+4ba77615-c0c,Annual User Conference,webinars,3509.92,2457.32,65,2025-07-01,marketing_platform
+ef887c54-625,Competitive Takeout,linkedin,8094.92,13115.36,63,2025-07-01,marketing_platform
+b2967f4e-090,Google Ads - Brand,events,8172.99,5414.71,1,2025-07-01,marketing_platform
+e4ec1d18-4ee,LinkedIn ABM Campaign,google_ads,5390.28,16983.96,59,2025-07-01,marketing_platform
+ac551c48-5ec,Analyst Report Sponsorship,linkedin,645.61,507.15,29,2025-07-01,marketing_platform
+499f5662-db9,Email Nurture - Enterprise,webinars,3464.46,10856.36,45,2025-07-01,marketing_platform
+a6d3fdec-0b1,Enterprise Webinar Series,events,8735.03,6418.71,33,2025-07-01,marketing_platform
+42ce2346-161,LinkedIn ABM Campaign,content_marketing,4073.03,11931.94,69,2025-06-30,marketing_platform
+ed086a8d-91f,Finance Leader Roundtable,events,8334.88,15417.78,50,2025-06-30,marketing_platform
+00f929c0-c78,Enterprise Webinar Series,linkedin,3438.0,10903.44,31,2025-06-30,marketing_platform
+90829c7c-135,Google Ads - Brand,email,3352.42,2602.65,37,2025-06-30,marketing_platform
+f9a1b787-f0d,Partner Co-Marketing,events,1356.14,2473.6,67,2025-06-30,marketing_platform
+fdd3b1c3-157,Analyst Report Sponsorship,content_marketing,4897.71,4059.75,55,2025-06-30,marketing_platform
+8b08664b-982,Cloud Analytics Content Hub,events,7558.72,2671.09,15,2025-06-30,marketing_platform
+4a3eab4a-134,Usage Expansion Plays,google_ads,2024.97,3545.92,55,2025-06-29,marketing_platform
+38a21d6a-b7a,Analyst Report Sponsorship,events,1557.9,4443.17,61,2025-06-29,marketing_platform
+573bcdec-2d8,Google Ads - Brand,linkedin,1729.31,5647.64,28,2025-06-29,marketing_platform
+6e1188da-082,Email Nurture - Enterprise,email,8072.94,13520.24,23,2025-06-29,marketing_platform
+339a0d50-54f,Finance Leader Roundtable,webinars,362.82,852.0,61,2025-06-29,marketing_platform
+db3d5d38-2da,Cloud Analytics Content Hub,webinars,4806.09,8140.51,49,2025-06-29,marketing_platform
+765c6781-6ad,Google Ads - Product,linkedin,6487.64,8672.5,17,2025-06-29,marketing_platform
+2bbdb0a4-c5a,Competitive Takeout,email,5372.24,13538.34,6,2025-06-29,marketing_platform
+6b657b0f-acd,Product-Led Growth Retargeting,events,5598.38,6282.47,14,2025-06-29,marketing_platform
+8d9dddaa-090,Partner Co-Marketing,events,8599.13,25323.74,8,2025-06-29,marketing_platform
+a8415bbe-9d9,Enterprise Webinar Series,webinars,2526.65,3614.69,22,2025-06-29,marketing_platform
+2784447a-37f,Annual User Conference,events,3556.46,10717.86,1,2025-06-29,marketing_platform
+6996f816-dc3,Analyst Report Sponsorship,email,2527.54,4045.75,53,2025-06-28,marketing_platform
+3066a3a1-304,Customer Proof Campaign,content_marketing,5046.42,12602.48,45,2025-06-28,marketing_platform
+2c4a81ad-6ac,Competitive Takeout,email,3877.2,12548.14,48,2025-06-28,marketing_platform
+51bb9d96-ad1,Finance Leader Roundtable,webinars,4327.47,6732.44,42,2025-06-28,marketing_platform
+a1cd6486-b4e,LinkedIn ABM Campaign,linkedin,7356.45,17997.67,32,2025-06-28,marketing_platform
+647db93e-372,Developer Community Events,events,9273.71,16946.39,2,2025-06-28,marketing_platform
+97752918-1d8,Cloud Analytics Content Hub,email,5866.88,12069.03,14,2025-06-28,marketing_platform
+6794b8d7-8dd,Product-Led Growth Retargeting,email,2022.45,5105.37,67,2025-06-28,marketing_platform
+943a581e-38a,Usage Expansion Plays,events,3386.82,4557.78,70,2025-06-28,marketing_platform
+bfaede06-54f,Partner Co-Marketing,email,5005.83,8728.09,48,2025-06-28,marketing_platform
+4270a618-310,Product-Led Growth Retargeting,webinars,566.13,1268.9,40,2025-06-27,marketing_platform
+5cfe5315-14e,Enterprise Webinar Series,email,8810.17,28394.62,69,2025-06-27,marketing_platform
+dabff5ec-ed2,Cloud Analytics Content Hub,email,4760.77,15289.24,26,2025-06-27,marketing_platform
+12ddd4fb-742,Email Nurture - Enterprise,linkedin,1773.5,1880.17,46,2025-06-27,marketing_platform
+31dc15ee-619,RevOps Field Dinner,google_ads,2625.94,2621.72,19,2025-06-27,marketing_platform
+14b1816e-3a7,Google Ads - Brand,email,1215.22,2876.41,10,2025-06-27,marketing_platform
+95e624d0-dd8,Developer Community Events,content_marketing,312.25,115.62,22,2025-06-27,marketing_platform
+310ca507-f9c,Competitive Takeout,events,6341.09,17046.52,27,2025-06-27,marketing_platform
+99f9158b-b39,Usage Expansion Plays,email,8971.78,16350.28,64,2025-06-27,marketing_platform
+af2a3531-3b6,Customer Proof Campaign,events,1858.15,4501.0,22,2025-06-27,marketing_platform
+3d4d4c05-153,Partner Co-Marketing,content_marketing,7336.29,18138.33,19,2025-06-27,marketing_platform
+21ca22a0-5e7,Google Ads - Product,linkedin,5858.0,11254.75,48,2025-06-27,marketing_platform
+a33564e7-70a,Customer Proof Campaign,linkedin,1085.63,425.47,60,2025-06-26,marketing_platform
+eefcaec6-82e,Usage Expansion Plays,events,3881.7,5979.03,40,2025-06-26,marketing_platform
+a286375d-0bf,Cloud Analytics Content Hub,email,5480.64,16998.06,75,2025-06-26,marketing_platform
+51adf8d9-2aa,RevOps Field Dinner,google_ads,649.41,635.79,60,2025-06-26,marketing_platform
+995cea3b-eb7,Competitive Takeout,webinars,3968.6,12526.75,50,2025-06-26,marketing_platform
+16a23b40-a6a,Annual User Conference,google_ads,2625.74,7677.65,38,2025-06-26,marketing_platform
+36810bd3-3a7,Enterprise Webinar Series,linkedin,5725.13,4849.43,23,2025-06-26,marketing_platform
+752e66cb-ce7,Email Nurture - Enterprise,content_marketing,4204.97,7062.37,9,2025-06-26,marketing_platform
+fce1b675-dd4,Product-Led Growth Retargeting,linkedin,6300.49,20059.89,28,2025-06-26,marketing_platform
+64d1c0d4-aba,Developer Community Events,google_ads,7978.37,3394.75,11,2025-06-26,marketing_platform
+a11f816c-c24,Google Ads - Brand,google_ads,3288.1,10321.83,24,2025-06-26,marketing_platform
+3f181f3a-d7d,Google Ads - Product,linkedin,6486.14,15626.8,66,2025-06-25,marketing_platform
+e7de65fc-7ab,Developer Community Events,events,1727.74,1943.71,73,2025-06-25,marketing_platform
+f8f784db-13b,Competitive Takeout,events,5571.21,3828.3,26,2025-06-25,marketing_platform
+5e67654e-4dd,Customer Proof Campaign,content_marketing,6079.18,6618.04,4,2025-06-25,marketing_platform
+780a8eb4-6a7,RevOps Field Dinner,email,3980.76,8003.71,42,2025-06-25,marketing_platform
+41f38a41-2e7,LinkedIn ABM Campaign,webinars,1837.09,4516.55,27,2025-06-25,marketing_platform
+492f1549-6f5,Cloud Analytics Content Hub,webinars,7635.91,15659.77,17,2025-06-25,marketing_platform
+bffc3eac-a4b,Analyst Report Sponsorship,google_ads,6945.01,20484.86,49,2025-06-25,marketing_platform
+abb1e80a-123,Partner Co-Marketing,webinars,3940.23,3028.89,60,2025-06-25,marketing_platform
+63c6e7bb-44d,Usage Expansion Plays,content_marketing,1429.45,3532.04,13,2025-06-25,marketing_platform
+e2ead93e-b59,Google Ads - Brand,linkedin,2163.09,2571.35,40,2025-06-24,marketing_platform
+bf7a4c8b-f87,RevOps Field Dinner,google_ads,1017.47,2297.94,43,2025-06-24,marketing_platform
+e47cdf4c-7b9,LinkedIn ABM Campaign,webinars,2628.29,2818.49,23,2025-06-24,marketing_platform
+847b55a6-85a,Partner Co-Marketing,email,492.28,180.15,62,2025-06-24,marketing_platform
+db81d427-9c7,Developer Community Events,google_ads,4820.47,13691.52,12,2025-06-24,marketing_platform
+ad9d5e58-73b,Analyst Report Sponsorship,events,332.3,819.79,8,2025-06-24,marketing_platform
+97312f21-882,Enterprise Webinar Series,webinars,2525.37,7506.53,32,2025-06-24,marketing_platform
+13273c14-bc0,Usage Expansion Plays,email,7062.87,11952.26,65,2025-06-24,marketing_platform
+9b81de57-eeb,Email Nurture - Enterprise,webinars,6396.48,12313.84,62,2025-06-23,marketing_platform
+656f8e42-b96,LinkedIn ABM Campaign,webinars,6047.85,17000.39,3,2025-06-23,marketing_platform
+c03050ba-1d9,Cloud Analytics Content Hub,linkedin,3269.42,7290.87,17,2025-06-23,marketing_platform
+825b822f-d9c,Google Ads - Brand,content_marketing,1712.76,2099.59,47,2025-06-23,marketing_platform
+66e3b3ce-872,Product-Led Growth Retargeting,linkedin,4788.49,10985.47,26,2025-06-23,marketing_platform
+cfd68d71-610,Enterprise Webinar Series,events,6709.46,17534.01,27,2025-06-23,marketing_platform
+b2c267f9-0c6,Developer Community Events,email,5994.74,5135.03,35,2025-06-23,marketing_platform
+b86cbd6e-843,Usage Expansion Plays,email,3258.19,4877.09,27,2025-06-23,marketing_platform
+1f3e32e9-15a,Competitive Takeout,events,5208.84,4623.61,16,2025-06-23,marketing_platform
+4a29c0a5-062,Customer Proof Campaign,content_marketing,1400.93,726.59,65,2025-06-23,marketing_platform
+535f4b4d-080,Finance Leader Roundtable,email,2171.62,4005.55,69,2025-06-23,marketing_platform
+b27476f3-694,Email Nurture - Enterprise,content_marketing,4286.3,11574.34,6,2025-06-22,marketing_platform
+a6290380-f8c,Customer Proof Campaign,webinars,8552.52,26947.19,73,2025-06-22,marketing_platform
+35843ec4-acd,Cloud Analytics Content Hub,email,3280.41,10239.56,20,2025-06-22,marketing_platform
+8aa47b0f-d20,Analyst Report Sponsorship,linkedin,3598.82,6771.27,63,2025-06-22,marketing_platform
+fdf2b6f9-b7f,Google Ads - Product,events,6334.71,19869.26,31,2025-06-22,marketing_platform
+6c132c75-3c1,RevOps Field Dinner,webinars,6185.96,18782.07,28,2025-06-22,marketing_platform
+21c02a6b-551,Annual User Conference,google_ads,7238.96,13806.84,41,2025-06-22,marketing_platform
+3b37b442-355,Usage Expansion Plays,linkedin,7713.98,21431.71,40,2025-06-21,marketing_platform
+6da5c55a-36c,Customer Proof Campaign,content_marketing,7776.06,16757.44,34,2025-06-21,marketing_platform
+9a67100c-e92,Developer Community Events,email,2059.65,2404.51,3,2025-06-21,marketing_platform
+c6a3559b-bda,Email Nurture - Enterprise,webinars,4562.79,9833.39,31,2025-06-21,marketing_platform
+0c5097a1-0c7,Enterprise Webinar Series,content_marketing,3724.48,10168.2,41,2025-06-21,marketing_platform
+92a28a4e-c9c,LinkedIn ABM Campaign,google_ads,7700.61,19034.22,6,2025-06-21,marketing_platform
+d9f803a6-554,Product-Led Growth Retargeting,linkedin,8972.38,20937.18,28,2025-06-21,marketing_platform
+d3e1f690-59d,Competitive Takeout,google_ads,1675.84,1565.3,51,2025-06-21,marketing_platform
+88b4147f-7d8,RevOps Field Dinner,webinars,8206.56,15381.67,73,2025-06-21,marketing_platform
+195249ff-5f1,Usage Expansion Plays,webinars,2991.73,1501.89,69,2025-06-20,marketing_platform
+5c0fedc7-c00,Enterprise Webinar Series,email,7759.09,17258.83,3,2025-06-20,marketing_platform
+b9b3516a-42e,Cloud Analytics Content Hub,linkedin,9360.91,29721.14,12,2025-06-20,marketing_platform
+7d163c58-42c,Partner Co-Marketing,content_marketing,7995.28,5603.75,6,2025-06-20,marketing_platform
+ffccf7f7-805,Developer Community Events,google_ads,1047.34,2990.3,13,2025-06-20,marketing_platform
+76b195fa-a8e,Analyst Report Sponsorship,google_ads,762.92,2026.43,2,2025-06-20,marketing_platform
+4509f662-9c1,Customer Proof Campaign,google_ads,337.32,719.07,53,2025-06-20,marketing_platform
+2a87c618-8cb,Google Ads - Product,google_ads,4162.94,5040.7,15,2025-06-20,marketing_platform
+795d411f-d47,Google Ads - Brand,email,9409.95,19917.84,28,2025-06-20,marketing_platform
+954c7f80-a81,Competitive Takeout,google_ads,1574.6,2065.57,38,2025-06-20,marketing_platform
+1562a65a-39a,Customer Proof Campaign,email,7889.95,4487.89,22,2025-06-19,marketing_platform
+6d8952d0-de8,Google Ads - Product,linkedin,9442.22,25984.75,11,2025-06-19,marketing_platform
+9cf8db6d-84f,Google Ads - Brand,email,6169.58,2652.9,65,2025-06-19,marketing_platform
+01f36e4d-67c,Finance Leader Roundtable,google_ads,8184.72,16348.06,4,2025-06-19,marketing_platform
+121fee1a-bb6,Annual User Conference,webinars,8007.57,14970.22,70,2025-06-19,marketing_platform
+572fcda4-6a4,Product-Led Growth Retargeting,events,9240.34,11226.94,21,2025-06-19,marketing_platform
+4d41df8e-aee,Email Nurture - Enterprise,content_marketing,7432.84,20913.17,18,2025-06-19,marketing_platform
+5a309e3d-19e,Competitive Takeout,google_ads,7480.27,23993.74,60,2025-06-19,marketing_platform
+30a466ea-1ba,Cloud Analytics Content Hub,content_marketing,3366.09,10615.17,63,2025-06-19,marketing_platform
+fe2bfbde-a6c,Partner Co-Marketing,linkedin,3967.37,5213.59,6,2025-06-19,marketing_platform
+1eb0430d-a67,Usage Expansion Plays,google_ads,7760.65,24896.96,52,2025-06-19,marketing_platform
+6a373880-672,Cloud Analytics Content Hub,webinars,762.7,309.03,73,2025-06-18,marketing_platform
+f08e8638-178,Product-Led Growth Retargeting,content_marketing,6718.39,4677.87,72,2025-06-18,marketing_platform
+370f3e5b-da9,Customer Proof Campaign,google_ads,3298.63,6165.65,11,2025-06-18,marketing_platform
+1a0b2c56-305,Enterprise Webinar Series,events,5453.95,8107.57,52,2025-06-18,marketing_platform
+96af42d0-823,Annual User Conference,email,4628.19,13412.37,27,2025-06-18,marketing_platform
+fd78785a-d82,Analyst Report Sponsorship,webinars,4287.38,1848.28,34,2025-06-18,marketing_platform
+6fe09d4e-aab,Developer Community Events,email,3212.26,9025.49,45,2025-06-18,marketing_platform
+a7c8670a-574,Email Nurture - Enterprise,webinars,8379.55,5996.25,38,2025-06-18,marketing_platform
+f2578fd1-d6f,Annual User Conference,webinars,2465.37,6611.92,49,2025-06-17,marketing_platform
+7be26224-7c2,Cloud Analytics Content Hub,webinars,9044.56,8211.09,22,2025-06-17,marketing_platform
+31da8703-b0a,Customer Proof Campaign,webinars,2547.43,5075.24,51,2025-06-17,marketing_platform
+24e33bb2-3b1,RevOps Field Dinner,content_marketing,1329.05,1094.15,31,2025-06-17,marketing_platform
+1ad11dd0-59d,Partner Co-Marketing,linkedin,2962.82,10057.1,8,2025-06-17,marketing_platform
+a162376d-4f1,Analyst Report Sponsorship,linkedin,1319.35,4153.86,9,2025-06-17,marketing_platform
+d3b28de0-b87,Developer Community Events,email,1601.86,1805.52,43,2025-06-17,marketing_platform
+51596e87-28f,Google Ads - Brand,linkedin,3488.03,1780.66,19,2025-06-16,marketing_platform
+445b3285-156,Email Nurture - Enterprise,linkedin,9005.92,25870.43,62,2025-06-16,marketing_platform
+114d8b50-63b,RevOps Field Dinner,linkedin,6947.14,8459.6,30,2025-06-16,marketing_platform
+f32666da-40b,LinkedIn ABM Campaign,linkedin,2248.42,4426.3,2,2025-06-16,marketing_platform
+cbc69a1a-711,Analyst Report Sponsorship,google_ads,6924.69,4909.75,39,2025-06-16,marketing_platform
+fa77925c-c9e,Usage Expansion Plays,events,8962.52,16804.72,28,2025-06-16,marketing_platform
+11406455-ef0,RevOps Field Dinner,linkedin,5563.54,14162.15,10,2025-06-15,marketing_platform
+d49efc4a-3f2,Email Nurture - Enterprise,email,8932.46,7084.06,4,2025-06-15,marketing_platform
+435a5d61-475,Annual User Conference,content_marketing,7796.06,13003.22,20,2025-06-15,marketing_platform
+89b0cc7e-6e6,Developer Community Events,webinars,6000.74,15597.66,11,2025-06-15,marketing_platform
+d07b4fe5-f07,Customer Proof Campaign,email,9425.81,24874.99,56,2025-06-15,marketing_platform
+3272fe07-c2d,Cloud Analytics Content Hub,linkedin,693.88,2126.94,57,2025-06-15,marketing_platform
+dba8682d-f24,Google Ads - Product,google_ads,2736.31,4616.67,49,2025-06-15,marketing_platform
+671ea0ac-e4c,Enterprise Webinar Series,google_ads,8738.45,8821.85,59,2025-06-14,marketing_platform
+c433bb4f-596,Partner Co-Marketing,linkedin,9368.64,17581.93,64,2025-06-14,marketing_platform
+17fb0e05-cd9,LinkedIn ABM Campaign,linkedin,8931.08,29956.38,53,2025-06-14,marketing_platform
+af5654c5-59f,Analyst Report Sponsorship,events,4749.77,3992.86,5,2025-06-14,marketing_platform
+5f920d69-e8c,Competitive Takeout,webinars,7017.37,4467.01,72,2025-06-14,marketing_platform
+0f3ac50d-abe,Finance Leader Roundtable,events,4331.82,11818.68,5,2025-06-14,marketing_platform
+6f979877-d11,Google Ads - Product,email,4767.2,3383.33,55,2025-06-14,marketing_platform
+0f5d25f8-fb2,Usage Expansion Plays,webinars,6574.95,11961.23,68,2025-06-13,marketing_platform
+95483f2e-315,LinkedIn ABM Campaign,email,4306.17,12666.33,40,2025-06-13,marketing_platform
+d3e72294-fac,Customer Proof Campaign,google_ads,305.3,597.66,71,2025-06-13,marketing_platform
+9a11b03c-57e,Competitive Takeout,content_marketing,6480.93,13539.93,9,2025-06-13,marketing_platform
+2ac8eafe-cbb,Enterprise Webinar Series,content_marketing,1642.68,4772.9,21,2025-06-13,marketing_platform
+995d2a8d-91d,Developer Community Events,linkedin,2035.47,4453.94,41,2025-06-13,marketing_platform
+56dcd646-968,Analyst Report Sponsorship,linkedin,2863.05,4838.93,4,2025-06-13,marketing_platform
+feb50fd1-c70,LinkedIn ABM Campaign,email,4977.4,4589.55,8,2025-06-12,marketing_platform
+7dbc6a54-df9,Finance Leader Roundtable,events,8969.24,13343.75,43,2025-06-12,marketing_platform
+2fa78c6b-abb,Cloud Analytics Content Hub,content_marketing,5216.73,3477.2,39,2025-06-12,marketing_platform
+ab145986-605,Google Ads - Product,webinars,6173.0,17144.62,3,2025-06-12,marketing_platform
+21971b30-aeb,Enterprise Webinar Series,linkedin,5003.48,8510.08,64,2025-06-12,marketing_platform
+b84da8bc-c2d,Partner Co-Marketing,content_marketing,702.26,2104.78,73,2025-06-12,marketing_platform
+19c8ffd2-fe4,Email Nurture - Enterprise,email,2129.51,2177.26,1,2025-06-12,marketing_platform
+e18e9618-56b,RevOps Field Dinner,google_ads,7228.65,9514.3,10,2025-06-12,marketing_platform
+d4325435-deb,Product-Led Growth Retargeting,content_marketing,988.61,1718.08,40,2025-06-12,marketing_platform
+f67a8e99-05c,Google Ads - Brand,linkedin,2365.34,7330.37,23,2025-06-12,marketing_platform
+09527407-24a,Customer Proof Campaign,email,3777.83,12759.29,22,2025-06-12,marketing_platform
+12acb6f5-b62,Annual User Conference,content_marketing,1436.3,4581.51,16,2025-06-12,marketing_platform
+e0197a33-a40,Analyst Report Sponsorship,events,4867.44,4737.57,28,2025-06-11,marketing_platform
+263425ea-300,Competitive Takeout,content_marketing,8867.83,7818.24,70,2025-06-11,marketing_platform
+9203c88f-b0b,Google Ads - Product,email,1617.23,1801.99,67,2025-06-11,marketing_platform
+453c48cf-8b7,Cloud Analytics Content Hub,linkedin,9480.13,12715.18,18,2025-06-11,marketing_platform
+54250fd3-ee5,Customer Proof Campaign,webinars,8711.2,9802.93,19,2025-06-11,marketing_platform
+17fee7f3-c9d,Partner Co-Marketing,events,2693.24,1790.95,67,2025-06-11,marketing_platform
+78e888fd-b16,RevOps Field Dinner,events,6928.89,11082.46,12,2025-06-11,marketing_platform
+a5679b96-931,Finance Leader Roundtable,google_ads,3341.4,3425.89,67,2025-06-11,marketing_platform
+5ac324e0-dcc,Analyst Report Sponsorship,linkedin,4322.69,2322.78,4,2025-06-10,marketing_platform
+079c560f-ed2,Cloud Analytics Content Hub,content_marketing,4897.9,10653.41,68,2025-06-10,marketing_platform
+824d0b6b-686,Google Ads - Product,linkedin,808.78,1366.09,62,2025-06-10,marketing_platform
+79244966-782,Annual User Conference,linkedin,4257.83,2634.3,58,2025-06-10,marketing_platform
+b25b4633-322,Enterprise Webinar Series,content_marketing,1262.52,670.81,45,2025-06-10,marketing_platform
+2fd90d61-4df,Finance Leader Roundtable,linkedin,1468.4,4700.48,65,2025-06-10,marketing_platform
+0d4f5fdc-452,Google Ads - Brand,content_marketing,3732.1,9407.36,57,2025-06-10,marketing_platform
+7e09ab46-e53,Competitive Takeout,webinars,6078.92,11049.03,37,2025-06-09,marketing_platform
+7f383815-3a3,Usage Expansion Plays,events,915.19,1556.37,8,2025-06-09,marketing_platform
+5c58b03f-3c6,Enterprise Webinar Series,email,4288.51,3707.91,10,2025-06-09,marketing_platform
+660dae21-94e,Partner Co-Marketing,webinars,8902.08,6499.57,15,2025-06-09,marketing_platform
+c3f806b7-866,Customer Proof Campaign,linkedin,1729.99,1321.37,56,2025-06-09,marketing_platform
+3a12b189-00a,Email Nurture - Enterprise,content_marketing,2771.0,9237.14,35,2025-06-09,marketing_platform
+a1dbbc6f-f53,Cloud Analytics Content Hub,email,7984.14,20947.01,58,2025-06-09,marketing_platform
+c794a1ef-9c1,Annual User Conference,content_marketing,3578.84,7783.79,17,2025-06-08,marketing_platform
+7715a4c3-2b4,Google Ads - Brand,webinars,1156.12,3051.64,9,2025-06-08,marketing_platform
+69fb259b-acc,Finance Leader Roundtable,email,2602.26,6404.79,18,2025-06-08,marketing_platform
+fb81093d-2a7,Enterprise Webinar Series,events,6270.08,18539.09,45,2025-06-08,marketing_platform
+c5047353-5d1,Cloud Analytics Content Hub,email,7533.49,3282.01,53,2025-06-08,marketing_platform
+3f05a464-6fc,LinkedIn ABM Campaign,google_ads,9379.05,27436.94,68,2025-06-08,marketing_platform
+05bbaddb-490,RevOps Field Dinner,content_marketing,5313.55,5016.14,36,2025-06-08,marketing_platform
+0bbf9fe6-8e3,Product-Led Growth Retargeting,email,5528.58,14444.46,19,2025-06-08,marketing_platform
+2b703c91-1bb,Partner Co-Marketing,webinars,9448.87,30650.37,36,2025-06-08,marketing_platform
+3012804f-2f5,Google Ads - Product,linkedin,8602.91,3042.85,17,2025-06-08,marketing_platform
+194847f3-7f9,Customer Proof Campaign,events,4175.2,12515.62,74,2025-06-07,marketing_platform
+6da7f651-901,Annual User Conference,content_marketing,2708.94,3330.4,49,2025-06-07,marketing_platform
+2247487c-f21,Partner Co-Marketing,webinars,6888.45,10005.34,61,2025-06-07,marketing_platform
+c0b6db01-dd6,Competitive Takeout,content_marketing,3358.63,7047.39,51,2025-06-07,marketing_platform
+83b487f7-ff1,Cloud Analytics Content Hub,events,4095.86,5317.97,30,2025-06-07,marketing_platform
+0ea008c0-447,Finance Leader Roundtable,linkedin,2405.92,2575.06,57,2025-06-07,marketing_platform
+6865351f-98a,Google Ads - Product,webinars,4018.55,7596.75,20,2025-06-07,marketing_platform
+b65f7ef0-232,RevOps Field Dinner,email,7662.03,12497.52,71,2025-06-06,marketing_platform
+6d8d2fce-38b,Email Nurture - Enterprise,webinars,3586.47,5107.14,19,2025-06-06,marketing_platform
+5f5466ab-d3a,Annual User Conference,webinars,4282.09,7308.57,21,2025-06-06,marketing_platform
+a6a4ec2b-39c,Usage Expansion Plays,webinars,6439.71,4088.33,59,2025-06-06,marketing_platform
+efa370b7-3f3,LinkedIn ABM Campaign,google_ads,8776.78,14396.26,20,2025-06-06,marketing_platform
+00b00361-5f5,Cloud Analytics Content Hub,events,7035.96,10937.25,12,2025-06-06,marketing_platform
+81da749d-a88,Product-Led Growth Retargeting,google_ads,8828.3,3680.62,70,2025-06-06,marketing_platform
+22f81690-5c3,Finance Leader Roundtable,events,3649.51,7141.76,25,2025-06-06,marketing_platform
+957ef45d-9e4,Customer Proof Campaign,content_marketing,5306.95,2496.28,60,2025-06-06,marketing_platform
+6c7c9721-949,Google Ads - Brand,google_ads,7919.57,2949.92,68,2025-06-06,marketing_platform
+07c1f472-84c,Product-Led Growth Retargeting,events,4890.88,12705.03,39,2025-06-05,marketing_platform
+cda701d7-ca4,Partner Co-Marketing,content_marketing,4687.34,11531.81,69,2025-06-05,marketing_platform
+52c474f7-78b,Annual User Conference,google_ads,5130.5,10075.1,40,2025-06-05,marketing_platform
+ead8ffc9-6cc,Google Ads - Brand,google_ads,1676.57,5043.06,34,2025-06-05,marketing_platform
+e60dd982-727,Competitive Takeout,webinars,6374.46,14700.87,75,2025-06-05,marketing_platform
+1780ed10-96d,Email Nurture - Enterprise,email,7394.02,11389.19,64,2025-06-05,marketing_platform
+b95977d6-969,Analyst Report Sponsorship,linkedin,4191.3,11416.01,32,2025-06-05,marketing_platform
+ee785686-564,Google Ads - Brand,webinars,9123.21,12849.37,41,2025-06-04,marketing_platform
+b76a7927-e93,Partner Co-Marketing,google_ads,4218.69,8368.92,57,2025-06-04,marketing_platform
+44ed458b-a67,Usage Expansion Plays,google_ads,4547.2,11892.26,18,2025-06-04,marketing_platform
+f58730ff-c4a,Analyst Report Sponsorship,webinars,799.79,2016.66,3,2025-06-04,marketing_platform
+022679b9-815,Customer Proof Campaign,content_marketing,5787.62,6946.46,1,2025-06-04,marketing_platform
+7d07cbbd-d49,Enterprise Webinar Series,google_ads,7663.73,5777.87,17,2025-06-04,marketing_platform
+3e00bf9c-e1c,Finance Leader Roundtable,linkedin,9194.35,17324.17,33,2025-06-04,marketing_platform
+d3639c76-ec3,Email Nurture - Enterprise,email,7743.29,24542.19,28,2025-06-04,marketing_platform
+9ed2e9c3-a1b,Competitive Takeout,linkedin,6149.59,17078.1,65,2025-06-04,marketing_platform
+75d181ae-403,Developer Community Events,content_marketing,2513.92,4032.91,60,2025-06-04,marketing_platform
+1bcb8291-7af,Competitive Takeout,webinars,7379.29,3636.45,35,2025-06-03,marketing_platform
+a89d8e59-f44,Partner Co-Marketing,email,1470.85,4156.42,60,2025-06-03,marketing_platform
+9ace5634-9f0,Customer Proof Campaign,content_marketing,457.5,1412.53,56,2025-06-03,marketing_platform
+77c4948e-d76,Google Ads - Product,google_ads,4714.25,11858.71,5,2025-06-03,marketing_platform
+02d76be9-88c,Annual User Conference,content_marketing,768.51,1842.4,75,2025-06-03,marketing_platform
+aa78b34f-938,LinkedIn ABM Campaign,content_marketing,9340.13,29053.31,23,2025-06-03,marketing_platform
+2e9ede01-e14,Cloud Analytics Content Hub,email,4597.03,2238.97,1,2025-06-03,marketing_platform
+3a3a6e70-8a2,Enterprise Webinar Series,linkedin,6271.96,10464.42,43,2025-06-03,marketing_platform
+f081f036-2e0,Analyst Report Sponsorship,events,8751.99,17075.96,55,2025-06-02,marketing_platform
+e1fc7cc3-9e0,Finance Leader Roundtable,events,5652.81,8934.21,51,2025-06-02,marketing_platform
+ef5b9234-8e7,Partner Co-Marketing,webinars,9268.39,10300.16,39,2025-06-02,marketing_platform
+bb08d1b8-b45,LinkedIn ABM Campaign,content_marketing,7467.22,23448.47,45,2025-06-02,marketing_platform
+63d955b4-be7,Developer Community Events,webinars,6365.03,6671.64,65,2025-06-02,marketing_platform
+7f49ca91-e0f,Email Nurture - Enterprise,content_marketing,7409.64,24569.38,8,2025-06-02,marketing_platform
+c57357c1-2d9,Usage Expansion Plays,content_marketing,2405.82,5106.21,40,2025-06-02,marketing_platform
+073dcfa2-74a,Customer Proof Campaign,email,8029.48,16541.43,3,2025-06-02,marketing_platform
+2d51cdc6-9fc,Competitive Takeout,google_ads,2058.32,6786.69,63,2025-06-02,marketing_platform
+77216875-528,Annual User Conference,content_marketing,7211.43,8718.85,3,2025-06-02,marketing_platform
+cfea6b96-a9b,Google Ads - Brand,events,6388.77,11963.39,72,2025-06-02,marketing_platform
+854c0433-8f1,Google Ads - Product,content_marketing,3784.94,4566.8,2,2025-06-02,marketing_platform
+fff30bbf-f7e,Customer Proof Campaign,email,5594.98,18172.2,44,2025-06-01,marketing_platform
+6a24eb64-2f8,Developer Community Events,google_ads,3704.62,2004.18,25,2025-06-01,marketing_platform
+75576245-5a3,Google Ads - Product,email,9226.9,21061.65,29,2025-06-01,marketing_platform
+624d7eb8-315,Partner Co-Marketing,linkedin,5790.81,3263.29,15,2025-06-01,marketing_platform
+8c9d0b66-35c,Google Ads - Brand,webinars,3196.58,8172.14,66,2025-06-01,marketing_platform
+a01de822-083,Cloud Analytics Content Hub,google_ads,7575.55,18640.73,38,2025-06-01,marketing_platform
+4b3aa9fe-75e,Competitive Takeout,email,8076.54,25322.85,39,2025-06-01,marketing_platform
+cf4521f2-5a9,Enterprise Webinar Series,content_marketing,2660.76,4077.23,68,2025-06-01,marketing_platform
+d017d387-94b,Finance Leader Roundtable,linkedin,8942.55,7557.6,68,2025-06-01,marketing_platform
+7e8e668c-85c,LinkedIn ABM Campaign,events,5404.83,8898.99,35,2025-06-01,marketing_platform
+dcb2fe07-2f4,Product-Led Growth Retargeting,content_marketing,6340.78,5635.33,69,2025-05-31,marketing_platform
+a85a3f66-185,RevOps Field Dinner,content_marketing,6335.2,14324.08,27,2025-05-31,marketing_platform
+abc0c85f-6f4,Analyst Report Sponsorship,google_ads,6780.93,21595.69,9,2025-05-31,marketing_platform
+5591f883-e8b,Annual User Conference,google_ads,867.46,1348.51,70,2025-05-31,marketing_platform
+75ec394d-8f8,Competitive Takeout,email,1751.77,1059.17,9,2025-05-31,marketing_platform
+ac629a44-fea,Cloud Analytics Content Hub,linkedin,5815.43,9084.14,26,2025-05-31,marketing_platform
+5d39c73f-d85,Google Ads - Brand,webinars,6534.57,17503.11,14,2025-05-31,marketing_platform
+ad8ad9e5-3a9,Competitive Takeout,google_ads,4616.54,5499.63,38,2025-05-30,marketing_platform
+93951809-667,Product-Led Growth Retargeting,content_marketing,4135.1,1947.11,59,2025-05-30,marketing_platform
+d490dc0b-b28,RevOps Field Dinner,google_ads,1083.83,3508.85,2,2025-05-30,marketing_platform
+786c4376-790,Developer Community Events,webinars,923.48,1683.49,37,2025-05-30,marketing_platform
+2fd3885e-080,Analyst Report Sponsorship,webinars,5359.88,2897.77,59,2025-05-30,marketing_platform
+16695b6a-7ba,Cloud Analytics Content Hub,email,3955.73,10154.22,32,2025-05-30,marketing_platform
+dc8e56ca-078,Finance Leader Roundtable,linkedin,6397.43,13864.7,1,2025-05-30,marketing_platform
+06d4b722-ce1,Enterprise Webinar Series,linkedin,2243.32,2763.47,68,2025-05-29,marketing_platform
+71fbf0cb-6e9,Usage Expansion Plays,content_marketing,8541.89,22681.51,52,2025-05-29,marketing_platform
+f258fa62-bcd,Customer Proof Campaign,webinars,5145.57,9390.06,50,2025-05-29,marketing_platform
+88190df4-d58,Competitive Takeout,events,6202.57,18659.38,59,2025-05-29,marketing_platform
+b0268fc8-163,Analyst Report Sponsorship,content_marketing,6580.77,13736.29,74,2025-05-29,marketing_platform
+fbfeb939-ee7,Developer Community Events,events,3782.1,7722.39,65,2025-05-29,marketing_platform
+43342ae9-8b3,Cloud Analytics Content Hub,google_ads,8769.67,28144.96,36,2025-05-29,marketing_platform
+29fad2cd-67a,RevOps Field Dinner,google_ads,2534.15,7284.75,27,2025-05-29,marketing_platform
+0d0aeda5-b33,Finance Leader Roundtable,webinars,8893.59,4159.15,48,2025-05-29,marketing_platform
+1fd5934f-c43,Annual User Conference,events,2834.07,8527.69,8,2025-05-29,marketing_platform
+b277280b-ae9,Google Ads - Product,linkedin,6338.65,19745.0,35,2025-05-29,marketing_platform
+8404cba3-e9b,Product-Led Growth Retargeting,google_ads,7372.23,9680.05,66,2025-05-28,marketing_platform
+200a021a-245,Google Ads - Product,content_marketing,1843.63,1618.28,71,2025-05-28,marketing_platform
+98d97347-24f,Customer Proof Campaign,webinars,7260.16,3526.27,32,2025-05-28,marketing_platform
+aac2ceb0-0c3,LinkedIn ABM Campaign,events,3047.93,5030.37,30,2025-05-28,marketing_platform
+65594f34-eab,Competitive Takeout,linkedin,5183.76,14690.54,11,2025-05-28,marketing_platform
+096e2b78-6ce,Usage Expansion Plays,content_marketing,583.78,279.23,27,2025-05-28,marketing_platform
+521fde4f-7d9,Finance Leader Roundtable,linkedin,5226.98,13627.33,61,2025-05-28,marketing_platform
+9be370c1-b61,Partner Co-Marketing,events,8489.0,8850.95,16,2025-05-28,marketing_platform
+dc3dbab8-905,Analyst Report Sponsorship,linkedin,9100.81,9613.4,38,2025-05-28,marketing_platform
+04a52175-9e7,RevOps Field Dinner,content_marketing,8761.03,13219.91,71,2025-05-28,marketing_platform
+3fab3d31-738,RevOps Field Dinner,events,7894.31,15740.19,2,2025-05-27,marketing_platform
+5077bf3a-cf0,LinkedIn ABM Campaign,linkedin,7138.3,15742.87,29,2025-05-27,marketing_platform
+0d98b2c2-91e,Enterprise Webinar Series,email,3699.81,4537.52,38,2025-05-27,marketing_platform
+763db864-873,Finance Leader Roundtable,linkedin,2402.31,4654.76,60,2025-05-27,marketing_platform
+35d9d733-e0f,Developer Community Events,google_ads,7065.22,12771.59,8,2025-05-27,marketing_platform
+7472f6e7-98e,Competitive Takeout,webinars,8166.55,8103.74,24,2025-05-27,marketing_platform
+123e095f-5f5,Annual User Conference,email,2474.41,5158.8,28,2025-05-27,marketing_platform
+58322b34-777,Cloud Analytics Content Hub,events,8707.1,16688.48,48,2025-05-27,marketing_platform
+e1a0c4d7-cd8,Email Nurture - Enterprise,linkedin,2921.08,4652.36,3,2025-05-27,marketing_platform
+65357a87-b84,Google Ads - Product,content_marketing,2594.8,3039.69,69,2025-05-26,marketing_platform
+6937afbc-a6a,Competitive Takeout,webinars,1427.41,1219.22,44,2025-05-26,marketing_platform
+dbbe94a7-c7f,Product-Led Growth Retargeting,linkedin,8920.9,26239.42,37,2025-05-26,marketing_platform
+137a5e2f-d29,Annual User Conference,content_marketing,666.0,1905.25,70,2025-05-26,marketing_platform
+a7b5614b-c23,Partner Co-Marketing,linkedin,6224.02,6976.03,51,2025-05-26,marketing_platform
+72c77a33-c62,Cloud Analytics Content Hub,webinars,7416.01,5160.87,63,2025-05-26,marketing_platform
+3fc8aaf5-e72,Usage Expansion Plays,events,5311.81,6959.34,59,2025-05-26,marketing_platform
+518420c3-6d6,RevOps Field Dinner,linkedin,1004.07,399.46,18,2025-05-26,marketing_platform
+6e9af052-9c7,Enterprise Webinar Series,content_marketing,7880.78,3170.2,15,2025-05-26,marketing_platform
+94497645-c1d,Customer Proof Campaign,webinars,3666.14,8058.56,43,2025-05-26,marketing_platform
+8d35c4db-31e,Analyst Report Sponsorship,email,1686.0,2113.01,71,2025-05-26,marketing_platform
+1c7d8b40-a89,Partner Co-Marketing,webinars,477.75,1167.73,72,2025-05-25,marketing_platform
+4ca914c2-4a3,Annual User Conference,content_marketing,5925.95,8332.56,20,2025-05-25,marketing_platform
+4538e3ed-0c6,LinkedIn ABM Campaign,email,6157.25,12039.71,59,2025-05-25,marketing_platform
+dcc710ba-eca,Finance Leader Roundtable,events,721.19,580.18,16,2025-05-25,marketing_platform
+4d4a2f8a-614,Developer Community Events,content_marketing,9284.51,19522.82,65,2025-05-25,marketing_platform
+2cf75748-097,Customer Proof Campaign,google_ads,1048.5,1837.78,17,2025-05-25,marketing_platform
+597d7772-297,Email Nurture - Enterprise,events,5131.12,3077.75,11,2025-05-25,marketing_platform
+5256e11b-95d,Usage Expansion Plays,email,2455.0,4010.89,38,2025-05-25,marketing_platform
+2fd0a393-d2b,Analyst Report Sponsorship,linkedin,1488.11,813.71,64,2025-05-25,marketing_platform
+f83003f1-ff7,Google Ads - Brand,email,8435.96,13737.49,13,2025-05-25,marketing_platform
+0a91f2c4-6d0,Customer Proof Campaign,webinars,4770.05,13377.0,48,2025-05-24,marketing_platform
+4db87e62-d1a,Google Ads - Brand,webinars,2221.13,7250.21,1,2025-05-24,marketing_platform
+e906b207-074,Finance Leader Roundtable,email,2087.24,1428.1,74,2025-05-24,marketing_platform
+79310198-ce4,Cloud Analytics Content Hub,google_ads,1904.12,1676.21,1,2025-05-24,marketing_platform
+54915cf3-bb3,LinkedIn ABM Campaign,webinars,7892.58,11784.25,26,2025-05-24,marketing_platform
+0c7200a0-78e,Email Nurture - Enterprise,content_marketing,5596.05,18628.69,69,2025-05-24,marketing_platform
+fac9f022-6cb,Usage Expansion Plays,events,7729.04,9818.5,68,2025-05-24,marketing_platform
+3ff143fb-9f4,Annual User Conference,events,5407.18,6228.97,44,2025-05-24,marketing_platform
+45a91db2-849,Analyst Report Sponsorship,email,9119.16,16133.92,65,2025-05-23,marketing_platform
+47766ffe-806,Finance Leader Roundtable,webinars,3638.55,5513.5,33,2025-05-23,marketing_platform
+6509bab1-364,RevOps Field Dinner,events,2229.08,6186.96,74,2025-05-23,marketing_platform
+0c2542d5-97d,Developer Community Events,webinars,1245.93,4150.72,68,2025-05-23,marketing_platform
+652be151-7d8,Email Nurture - Enterprise,linkedin,5054.66,8407.6,24,2025-05-23,marketing_platform
+8057e22e-bea,Google Ads - Brand,email,8207.42,17818.43,72,2025-05-23,marketing_platform
+9f845180-2bb,Enterprise Webinar Series,linkedin,622.49,1394.98,61,2025-05-23,marketing_platform
+ade074a9-6eb,Cloud Analytics Content Hub,google_ads,1864.28,3877.31,65,2025-05-23,marketing_platform
+4cd86eaa-b88,Partner Co-Marketing,email,5823.44,7704.18,61,2025-05-23,marketing_platform
+087a3403-be0,LinkedIn ABM Campaign,content_marketing,8363.38,25206.94,34,2025-05-23,marketing_platform
+8d456bf3-9ed,Usage Expansion Plays,email,4942.36,13037.76,50,2025-05-23,marketing_platform
+21bd0be1-ab9,Customer Proof Campaign,linkedin,2723.53,1824.04,16,2025-05-23,marketing_platform
+7fae49e9-f24,Usage Expansion Plays,linkedin,8694.44,8870.68,31,2025-05-22,marketing_platform
+d9e7df43-7bb,Enterprise Webinar Series,email,5679.84,14529.84,17,2025-05-22,marketing_platform
+11561836-b15,Cloud Analytics Content Hub,content_marketing,4591.78,8151.75,43,2025-05-22,marketing_platform
+d59e71c5-8e4,Finance Leader Roundtable,webinars,3978.37,12444.45,14,2025-05-22,marketing_platform
+09d07c9a-56c,Product-Led Growth Retargeting,google_ads,2452.87,2635.63,17,2025-05-22,marketing_platform
+b6f4488b-34f,Email Nurture - Enterprise,content_marketing,7630.45,22065.34,26,2025-05-22,marketing_platform
+6b97a7a0-711,Google Ads - Product,webinars,4723.6,11152.42,20,2025-05-22,marketing_platform
+9a487b25-591,LinkedIn ABM Campaign,webinars,720.57,992.34,16,2025-05-21,marketing_platform
+7242e4c4-e64,Competitive Takeout,google_ads,2173.33,3730.57,46,2025-05-21,marketing_platform
+020c8071-303,Enterprise Webinar Series,webinars,793.81,797.0,52,2025-05-21,marketing_platform
+73305d47-85a,Product-Led Growth Retargeting,events,2961.97,7212.61,5,2025-05-21,marketing_platform
+9aee4f01-002,Google Ads - Brand,content_marketing,9106.75,21563.38,69,2025-05-21,marketing_platform
+f34c758e-5d2,Partner Co-Marketing,email,6695.9,8089.26,6,2025-05-21,marketing_platform
+d88733d8-cec,Email Nurture - Enterprise,events,359.02,1100.19,51,2025-05-21,marketing_platform
+be3d1317-66f,RevOps Field Dinner,events,8927.1,28587.82,52,2025-05-21,marketing_platform
+e53bec67-371,Cloud Analytics Content Hub,events,6074.9,11203.02,21,2025-05-21,marketing_platform
+c067d0cc-29d,Annual User Conference,content_marketing,527.94,390.56,4,2025-05-21,marketing_platform
+32d3a3fd-577,Google Ads - Product,linkedin,1485.06,1434.42,35,2025-05-21,marketing_platform
+a83f643b-2e8,Developer Community Events,email,7255.16,3997.9,35,2025-05-21,marketing_platform
+6366f120-0d3,Product-Led Growth Retargeting,webinars,4610.38,3435.81,60,2025-05-20,marketing_platform
+df128e5c-af3,Partner Co-Marketing,events,2688.14,2693.29,67,2025-05-20,marketing_platform
+23c1b556-7e5,Cloud Analytics Content Hub,google_ads,2368.2,7586.52,2,2025-05-20,marketing_platform
+1d9c50d4-25d,Finance Leader Roundtable,google_ads,6062.88,9778.95,13,2025-05-20,marketing_platform
+f175b4b0-d82,Google Ads - Brand,google_ads,6265.55,19548.56,41,2025-05-20,marketing_platform
+9aa1a5de-c5f,LinkedIn ABM Campaign,email,5469.72,15112.95,60,2025-05-20,marketing_platform
+0ef4d28d-6c5,Developer Community Events,email,2429.89,4034.57,18,2025-05-20,marketing_platform
+6fb6b0c6-168,Email Nurture - Enterprise,linkedin,6129.7,13913.55,32,2025-05-20,marketing_platform
+e032447d-56a,Customer Proof Campaign,google_ads,8221.07,9698.81,20,2025-05-20,marketing_platform
+c1e8d437-5ab,Enterprise Webinar Series,content_marketing,1833.54,2565.95,11,2025-05-20,marketing_platform
+83d237a9-891,RevOps Field Dinner,email,6665.82,16848.98,32,2025-05-20,marketing_platform
+297893e6-178,Google Ads - Product,email,312.74,179.55,61,2025-05-20,marketing_platform
+45cc0b24-2e7,Competitive Takeout,google_ads,3001.28,1534.36,45,2025-05-19,marketing_platform
+5f79c662-2c0,RevOps Field Dinner,webinars,9414.4,24713.63,67,2025-05-19,marketing_platform
+9cd197e4-d98,Finance Leader Roundtable,linkedin,919.44,2063.81,10,2025-05-19,marketing_platform
+8e0c9621-877,Annual User Conference,events,7496.2,13324.47,70,2025-05-19,marketing_platform
+e1d08f2a-607,Cloud Analytics Content Hub,email,8766.38,6823.91,75,2025-05-19,marketing_platform
+8cc16f15-9f1,Product-Led Growth Retargeting,webinars,2819.17,5208.11,55,2025-05-19,marketing_platform
+b0c4af32-a44,Google Ads - Brand,linkedin,2394.86,5605.51,4,2025-05-19,marketing_platform
+71689a99-a18,LinkedIn ABM Campaign,google_ads,1001.06,806.41,42,2025-05-19,marketing_platform
+4a123d23-0fa,Usage Expansion Plays,webinars,6164.98,16463.33,41,2025-05-19,marketing_platform
+b2b16e2d-752,Email Nurture - Enterprise,linkedin,6588.17,21469.7,50,2025-05-19,marketing_platform
+59fde8d5-320,RevOps Field Dinner,events,4653.49,13061.38,63,2025-05-18,marketing_platform
+ad8258e5-f43,LinkedIn ABM Campaign,linkedin,6954.98,22565.38,48,2025-05-18,marketing_platform
+0f0b41bc-20f,Enterprise Webinar Series,google_ads,1412.13,2914.44,65,2025-05-18,marketing_platform
+6c51011e-483,Developer Community Events,webinars,5937.86,6451.37,14,2025-05-18,marketing_platform
+3fccb8b7-f75,Email Nurture - Enterprise,linkedin,1212.45,2500.86,54,2025-05-18,marketing_platform
+a09d3c31-ae4,Google Ads - Brand,google_ads,4577.78,9341.08,48,2025-05-18,marketing_platform
+7b2ff3f1-917,Usage Expansion Plays,events,5818.49,14029.81,21,2025-05-17,marketing_platform
+d0badf08-ad9,Developer Community Events,content_marketing,7532.24,3996.2,1,2025-05-17,marketing_platform
+052c360c-733,Customer Proof Campaign,events,4622.53,12681.98,47,2025-05-17,marketing_platform
+1460d761-18d,Email Nurture - Enterprise,content_marketing,8336.45,9227.13,14,2025-05-17,marketing_platform
+53375e47-feb,Finance Leader Roundtable,events,1226.46,1822.23,54,2025-05-17,marketing_platform
+fffdda84-7bb,Cloud Analytics Content Hub,linkedin,6121.65,2929.48,48,2025-05-17,marketing_platform
+3136f4c5-ddd,LinkedIn ABM Campaign,events,6248.61,13815.03,37,2025-05-17,marketing_platform
+8d8087a5-a7b,Usage Expansion Plays,webinars,4268.42,4424.84,14,2025-05-16,marketing_platform
+b89d1260-850,Competitive Takeout,email,5114.39,13416.59,26,2025-05-16,marketing_platform
+436d52e9-aca,Email Nurture - Enterprise,email,8897.48,17024.07,75,2025-05-16,marketing_platform
+eecd5e56-f03,Google Ads - Product,content_marketing,7371.97,8262.39,7,2025-05-16,marketing_platform
+3abce0f6-285,LinkedIn ABM Campaign,webinars,1420.79,1971.03,66,2025-05-16,marketing_platform
+93813988-852,Annual User Conference,google_ads,6399.36,5584.05,64,2025-05-16,marketing_platform
+7c74df06-fc4,Finance Leader Roundtable,events,1482.54,2289.28,18,2025-05-16,marketing_platform
+f0f453d4-d81,Analyst Report Sponsorship,webinars,859.43,1884.59,41,2025-05-16,marketing_platform
+72e740e4-31f,Customer Proof Campaign,events,3827.34,4785.11,74,2025-05-16,marketing_platform
+c99bcd07-cf1,Enterprise Webinar Series,linkedin,4081.75,8162.05,43,2025-05-16,marketing_platform
+e946bfce-d22,Developer Community Events,linkedin,5651.18,17986.34,71,2025-05-16,marketing_platform
+21947a8c-1f9,Product-Led Growth Retargeting,webinars,6728.04,21059.31,48,2025-05-16,marketing_platform
+ee1e3bd4-f5d,Competitive Takeout,google_ads,3520.08,8996.59,45,2025-05-15,marketing_platform
+6db8aacf-8fa,Cloud Analytics Content Hub,email,2628.77,4134.81,11,2025-05-15,marketing_platform
+d038bb93-0fb,Google Ads - Product,webinars,6288.17,6699.21,30,2025-05-15,marketing_platform
+c2c3bb4d-dd2,Finance Leader Roundtable,email,1411.61,548.21,7,2025-05-15,marketing_platform
+0102a821-bec,Partner Co-Marketing,content_marketing,587.8,1531.39,53,2025-05-15,marketing_platform
+6cb67de0-969,LinkedIn ABM Campaign,content_marketing,6694.2,8329.77,27,2025-05-15,marketing_platform
+64efe4b6-eb2,Customer Proof Campaign,email,3844.72,8305.33,1,2025-05-15,marketing_platform
+7e79d0cd-3b5,Developer Community Events,events,5087.67,8790.04,37,2025-05-15,marketing_platform
+26c5ff0e-f72,Customer Proof Campaign,content_marketing,592.68,371.63,54,2025-05-14,marketing_platform
+f5ce1cfc-321,Developer Community Events,content_marketing,5224.02,5009.03,53,2025-05-14,marketing_platform
+6f622bb9-6c4,Google Ads - Product,linkedin,9407.13,17511.67,33,2025-05-14,marketing_platform
+b97b6fb4-2cc,LinkedIn ABM Campaign,email,6421.86,8943.42,44,2025-05-14,marketing_platform
+e04fec7c-36a,Email Nurture - Enterprise,email,8528.73,20841.84,12,2025-05-14,marketing_platform
+fcf24b4e-02e,Annual User Conference,google_ads,1990.63,4280.08,58,2025-05-14,marketing_platform
+6cb02fa2-341,Usage Expansion Plays,webinars,4746.8,7898.04,14,2025-05-14,marketing_platform
+1484afce-78c,Enterprise Webinar Series,content_marketing,2449.33,5195.1,10,2025-05-13,marketing_platform
+b335cc01-613,Product-Led Growth Retargeting,events,1044.77,964.95,36,2025-05-13,marketing_platform
+eac4e6a1-9b7,RevOps Field Dinner,google_ads,7431.36,8269.95,47,2025-05-13,marketing_platform
+9d266921-0f0,Customer Proof Campaign,webinars,5881.26,12917.53,60,2025-05-13,marketing_platform
+89e27171-288,LinkedIn ABM Campaign,google_ads,786.43,1595.11,6,2025-05-13,marketing_platform
+2a644b19-22d,Partner Co-Marketing,linkedin,1185.97,649.55,20,2025-05-13,marketing_platform
+c4e13377-f7c,Developer Community Events,events,3424.75,8795.31,65,2025-05-13,marketing_platform
+d757d778-5db,Competitive Takeout,email,2299.91,3645.28,57,2025-05-13,marketing_platform
+ecb3622b-c6f,Google Ads - Product,events,5512.06,17594.74,52,2025-05-13,marketing_platform
+a981b56f-3a5,Finance Leader Roundtable,linkedin,1687.73,5222.38,17,2025-05-13,marketing_platform
+7cfef001-05f,Email Nurture - Enterprise,webinars,6328.71,5401.83,57,2025-05-13,marketing_platform
+c8c6cf15-36a,Google Ads - Brand,email,9138.33,11969.01,21,2025-05-13,marketing_platform
+c2ecc59a-a5d,Developer Community Events,webinars,8338.89,5757.09,24,2025-05-12,marketing_platform
+c254244d-d5f,Customer Proof Campaign,events,564.07,1457.61,74,2025-05-12,marketing_platform
+01ce0471-4ac,Finance Leader Roundtable,content_marketing,7022.19,8147.32,16,2025-05-12,marketing_platform
+9742eb6b-b5c,LinkedIn ABM Campaign,content_marketing,4880.8,6682.99,66,2025-05-12,marketing_platform
+c4d75151-1ec,Product-Led Growth Retargeting,content_marketing,6900.97,20477.54,2,2025-05-12,marketing_platform
+3308d2d5-6b9,Annual User Conference,content_marketing,1427.3,4713.18,67,2025-05-12,marketing_platform
+f2ab62c2-339,Email Nurture - Enterprise,events,5648.78,14981.93,2,2025-05-12,marketing_platform
+8a494769-9d7,Google Ads - Brand,google_ads,7450.94,21822.76,68,2025-05-12,marketing_platform
+1007088c-ef3,Partner Co-Marketing,google_ads,5316.57,11965.46,30,2025-05-12,marketing_platform
+d13611d9-519,Competitive Takeout,content_marketing,2769.62,5623.63,31,2025-05-12,marketing_platform
+adb6ea12-a9a,Partner Co-Marketing,webinars,1927.35,5453.77,45,2025-05-11,marketing_platform
+a2cc05bc-929,Finance Leader Roundtable,linkedin,4237.87,1642.47,65,2025-05-11,marketing_platform
+ef8aa422-772,Developer Community Events,webinars,8561.37,13436.35,48,2025-05-11,marketing_platform
+44f2905a-bb0,Cloud Analytics Content Hub,webinars,916.79,2110.48,68,2025-05-11,marketing_platform
+2e137d3f-efd,Annual User Conference,events,4715.69,6710.84,5,2025-05-11,marketing_platform
+65439836-704,Customer Proof Campaign,webinars,5487.75,18562.98,73,2025-05-11,marketing_platform
+9613905d-cae,RevOps Field Dinner,events,1825.87,2218.6,35,2025-05-11,marketing_platform
+8d26c50d-686,Google Ads - Product,content_marketing,7166.29,17939.22,57,2025-05-11,marketing_platform
+93fd9cf2-3b1,LinkedIn ABM Campaign,events,6931.33,2971.3,23,2025-05-11,marketing_platform
+ab513d96-f90,Competitive Takeout,linkedin,5273.21,15532.36,68,2025-05-11,marketing_platform
+1dcfaccc-3ca,Cloud Analytics Content Hub,events,6167.28,19308.24,18,2025-05-10,marketing_platform
+5cad0bdd-b78,Google Ads - Product,linkedin,8919.97,16794.28,14,2025-05-10,marketing_platform
+b402c960-c3a,Annual User Conference,email,8097.27,6437.79,5,2025-05-10,marketing_platform
+1da221b5-c4c,Partner Co-Marketing,content_marketing,5082.46,6190.86,35,2025-05-10,marketing_platform
+d574860d-54b,Developer Community Events,email,8580.15,28816.57,36,2025-05-10,marketing_platform
+d2e23787-257,Usage Expansion Plays,content_marketing,6923.05,20869.11,37,2025-05-10,marketing_platform
+2e180b17-65f,Product-Led Growth Retargeting,email,2542.05,8342.99,27,2025-05-10,marketing_platform
+6c5341ec-47e,Enterprise Webinar Series,email,6486.01,6519.25,74,2025-05-10,marketing_platform
+22a23c02-a8b,Analyst Report Sponsorship,google_ads,3563.77,1611.64,15,2025-05-10,marketing_platform
+c8f800a0-8ef,RevOps Field Dinner,email,1466.53,4791.69,45,2025-05-10,marketing_platform
+88ba642c-09f,Competitive Takeout,webinars,485.12,1092.97,19,2025-05-10,marketing_platform
+af6b8a31-408,Usage Expansion Plays,linkedin,3955.71,9851.65,66,2025-05-09,marketing_platform
+57a97a15-203,Finance Leader Roundtable,webinars,6821.11,21019.3,73,2025-05-09,marketing_platform
+8a68e2a8-593,Cloud Analytics Content Hub,events,3812.6,5484.82,74,2025-05-09,marketing_platform
+f400811b-17d,Customer Proof Campaign,google_ads,1243.84,2636.79,15,2025-05-09,marketing_platform
+a56d8e7c-c56,LinkedIn ABM Campaign,email,7200.03,7314.45,73,2025-05-09,marketing_platform
+0476fcbe-984,Analyst Report Sponsorship,webinars,461.81,607.82,24,2025-05-09,marketing_platform
+5b1d7275-f25,Email Nurture - Enterprise,webinars,3330.32,8388.87,19,2025-05-09,marketing_platform
+b1709241-5d9,Google Ads - Brand,google_ads,341.03,270.19,7,2025-05-09,marketing_platform
+ba768a5d-d61,Partner Co-Marketing,email,4859.02,9502.51,49,2025-05-09,marketing_platform
+3beb7eae-a3c,Developer Community Events,webinars,1844.82,2456.97,63,2025-05-08,marketing_platform
+6e0dad74-478,Usage Expansion Plays,google_ads,337.67,562.68,35,2025-05-08,marketing_platform
+1c58466f-c2a,Annual User Conference,events,9374.92,8415.39,43,2025-05-08,marketing_platform
+fc34f357-076,Google Ads - Brand,email,1645.27,3120.62,17,2025-05-08,marketing_platform
+1c5c5655-fd6,Cloud Analytics Content Hub,email,9475.18,23800.8,2,2025-05-08,marketing_platform
+df98cb53-32c,Email Nurture - Enterprise,email,1558.37,1458.67,44,2025-05-08,marketing_platform
+0df00a88-079,Product-Led Growth Retargeting,webinars,6850.44,22295.99,61,2025-05-07,marketing_platform
+1b51bdf6-4ce,Analyst Report Sponsorship,webinars,7034.99,20259.52,60,2025-05-07,marketing_platform
+314841a7-715,Cloud Analytics Content Hub,events,2287.79,6063.49,12,2025-05-07,marketing_platform
+f84376ad-a49,Google Ads - Product,events,767.37,1865.52,30,2025-05-07,marketing_platform
+aeccd939-9ea,Developer Community Events,google_ads,1300.7,2617.07,34,2025-05-07,marketing_platform
+f4512e51-084,Enterprise Webinar Series,events,9419.83,15226.66,69,2025-05-07,marketing_platform
+16486bdf-c7c,Google Ads - Brand,email,4044.63,8485.29,71,2025-05-07,marketing_platform
+1ed6c878-648,Usage Expansion Plays,email,3129.07,4544.76,33,2025-05-07,marketing_platform
+866cb642-407,Partner Co-Marketing,content_marketing,9487.01,23844.27,63,2025-05-07,marketing_platform
+d0358c56-4ec,Annual User Conference,google_ads,9223.38,6512.02,24,2025-05-06,marketing_platform
+e5259959-a23,Finance Leader Roundtable,email,4728.94,8103.81,1,2025-05-06,marketing_platform
+0a83a78b-4bd,RevOps Field Dinner,linkedin,634.44,2048.27,29,2025-05-06,marketing_platform
+202ff223-20a,Partner Co-Marketing,email,5716.03,4097.36,37,2025-05-06,marketing_platform
+87e578ee-f3b,Email Nurture - Enterprise,linkedin,5598.38,11791.43,69,2025-05-06,marketing_platform
+f5da27ae-a67,Customer Proof Campaign,events,7858.53,26544.21,31,2025-05-06,marketing_platform
+772453b4-0b4,Cloud Analytics Content Hub,linkedin,4571.26,3192.7,53,2025-05-06,marketing_platform
+a47039cd-3af,Product-Led Growth Retargeting,events,2168.57,767.34,49,2025-05-06,marketing_platform
+640bd3f1-a70,Cloud Analytics Content Hub,email,4334.68,8030.03,11,2025-05-05,marketing_platform
+8b4412ae-776,Usage Expansion Plays,webinars,5620.96,3203.32,57,2025-05-05,marketing_platform
+095a4aa2-970,Google Ads - Product,webinars,1696.19,5171.56,40,2025-05-05,marketing_platform
+af15906c-a6a,Annual User Conference,email,8199.56,8518.41,63,2025-05-05,marketing_platform
+4971e750-3cc,Finance Leader Roundtable,email,8259.16,15458.89,6,2025-05-05,marketing_platform
+70cdd9c8-014,LinkedIn ABM Campaign,webinars,3427.36,2925.98,3,2025-05-05,marketing_platform
+f11d5d04-b21,Competitive Takeout,google_ads,1182.86,1797.29,22,2025-05-04,marketing_platform
+9d3527c5-ac6,Usage Expansion Plays,google_ads,9180.19,30285.38,49,2025-05-04,marketing_platform
+f26d8121-61e,Developer Community Events,events,2902.31,4412.09,18,2025-05-04,marketing_platform
+ea0630ca-e3e,Partner Co-Marketing,content_marketing,8818.6,24905.52,57,2025-05-04,marketing_platform
+d6c6680b-5b5,Google Ads - Product,events,4756.09,4096.83,6,2025-05-04,marketing_platform
+2201179b-ef9,Annual User Conference,email,2608.06,6690.16,42,2025-05-04,marketing_platform
+1878446e-251,Finance Leader Roundtable,email,8585.31,5942.53,28,2025-05-04,marketing_platform
+1c3a3df5-76a,Email Nurture - Enterprise,linkedin,8415.76,21058.27,3,2025-05-04,marketing_platform
+82090756-9bb,Google Ads - Brand,content_marketing,3429.23,4734.36,40,2025-05-04,marketing_platform
+265df997-c06,Customer Proof Campaign,google_ads,1984.35,1761.61,16,2025-05-04,marketing_platform
+594067b9-8f2,RevOps Field Dinner,events,6918.84,19590.03,13,2025-05-04,marketing_platform
+d146a2a7-a00,Analyst Report Sponsorship,linkedin,7490.36,6684.7,10,2025-05-04,marketing_platform
+cd8ee09c-a32,Usage Expansion Plays,linkedin,3411.2,5748.66,50,2025-05-03,marketing_platform
+f6415b9b-cfa,Product-Led Growth Retargeting,email,5494.62,8204.78,9,2025-05-03,marketing_platform
+5e3523f6-b27,Competitive Takeout,email,9017.48,24075.4,40,2025-05-03,marketing_platform
+7dd703b5-af9,Google Ads - Product,google_ads,2821.03,4957.06,15,2025-05-03,marketing_platform
+cb8f5b4f-f60,Enterprise Webinar Series,content_marketing,3954.64,10118.21,26,2025-05-03,marketing_platform
+590c8513-854,Developer Community Events,email,3951.08,5365.35,42,2025-05-03,marketing_platform
+1e523350-946,Email Nurture - Enterprise,content_marketing,854.22,2335.41,24,2025-05-03,marketing_platform
+b919d0c9-e48,Finance Leader Roundtable,email,3273.08,2229.52,13,2025-05-03,marketing_platform
+2dd76af2-d8a,Enterprise Webinar Series,google_ads,2418.41,7549.69,10,2025-05-02,marketing_platform
+b7f17b6c-d4d,Finance Leader Roundtable,email,2529.8,8331.63,43,2025-05-02,marketing_platform
+4dee55e4-898,Cloud Analytics Content Hub,webinars,444.49,1391.56,49,2025-05-02,marketing_platform
+72dcf158-b58,Analyst Report Sponsorship,google_ads,5922.45,8164.69,62,2025-05-02,marketing_platform
+ab621550-22f,Partner Co-Marketing,events,1811.53,4034.26,36,2025-05-02,marketing_platform
+088ae66c-d0a,Email Nurture - Enterprise,google_ads,6112.4,6342.11,22,2025-05-02,marketing_platform
+1fefcee2-207,Google Ads - Product,events,8936.02,7352.98,66,2025-05-02,marketing_platform
+1fe675e1-afd,Product-Led Growth Retargeting,linkedin,6222.38,2227.36,37,2025-05-01,marketing_platform
+d606257c-11e,Developer Community Events,events,8422.85,11987.31,27,2025-05-01,marketing_platform
+d7a6347e-4b8,Google Ads - Product,events,6472.37,8461.93,46,2025-05-01,marketing_platform
+44c885d1-6aa,LinkedIn ABM Campaign,email,7604.76,9709.71,41,2025-05-01,marketing_platform
+c56e6ac1-f3f,Usage Expansion Plays,events,7129.85,7716.82,8,2025-05-01,marketing_platform
+2df5461e-d70,Annual User Conference,google_ads,3916.57,10051.53,41,2025-05-01,marketing_platform
+e19250cd-b1d,Email Nurture - Enterprise,linkedin,9397.19,18656.72,51,2025-04-30,marketing_platform
+d9485b0e-9d7,Google Ads - Brand,content_marketing,5185.46,3513.93,57,2025-04-30,marketing_platform
+8ac16c74-760,LinkedIn ABM Campaign,events,5977.07,4759.36,47,2025-04-30,marketing_platform
+652760cf-3b3,Cloud Analytics Content Hub,google_ads,4696.22,6862.26,19,2025-04-30,marketing_platform
+9ef15cb6-082,Customer Proof Campaign,webinars,373.39,407.98,31,2025-04-30,marketing_platform
+625fa4ec-233,Competitive Takeout,google_ads,1946.66,3081.45,23,2025-04-30,marketing_platform
+f6b3b919-a00,Developer Community Events,events,1271.66,2055.44,26,2025-04-30,marketing_platform
+4bd78049-7b3,Annual User Conference,webinars,9013.1,18360.2,12,2025-04-30,marketing_platform
+28ce460c-0b2,RevOps Field Dinner,google_ads,336.42,372.24,65,2025-04-30,marketing_platform
+eb91fbea-3a7,RevOps Field Dinner,events,1202.42,658.12,74,2025-04-29,marketing_platform
+5de8185d-549,Cloud Analytics Content Hub,google_ads,3827.08,9298.79,27,2025-04-29,marketing_platform
+a31421d0-940,Google Ads - Brand,events,8980.96,4746.73,44,2025-04-29,marketing_platform
+f48cc01b-598,Competitive Takeout,events,1681.69,4177.1,39,2025-04-29,marketing_platform
+4b80b249-319,Developer Community Events,webinars,5631.24,13489.62,72,2025-04-29,marketing_platform
+761fd878-00c,Analyst Report Sponsorship,email,4318.78,14026.46,31,2025-04-29,marketing_platform
+91f35db9-edb,Partner Co-Marketing,google_ads,4493.74,2039.29,40,2025-04-29,marketing_platform
+a5d2132d-a40,Customer Proof Campaign,webinars,4231.18,6694.42,3,2025-04-28,marketing_platform
+c328599e-e5d,Cloud Analytics Content Hub,google_ads,522.78,1739.43,53,2025-04-28,marketing_platform
+b5751773-9aa,Competitive Takeout,google_ads,4181.97,11602.36,10,2025-04-28,marketing_platform
+adbc1b49-091,Google Ads - Product,linkedin,2393.6,2780.56,48,2025-04-28,marketing_platform
+1390f19c-8ab,Analyst Report Sponsorship,google_ads,6167.11,6887.94,7,2025-04-28,marketing_platform
+060c2d6c-1e0,Google Ads - Brand,google_ads,4102.89,11841.93,42,2025-04-28,marketing_platform
+c634c8c7-1ea,RevOps Field Dinner,google_ads,5534.16,8017.03,56,2025-04-27,marketing_platform
+cf581199-079,Competitive Takeout,content_marketing,4997.87,16272.51,63,2025-04-27,marketing_platform
+6cc05bd1-83e,Usage Expansion Plays,email,2166.67,4495.82,26,2025-04-27,marketing_platform
+a1c68bde-e46,Cloud Analytics Content Hub,linkedin,7038.88,13507.59,17,2025-04-27,marketing_platform
+f4f2234c-e8f,Developer Community Events,webinars,2952.28,1834.32,20,2025-04-27,marketing_platform
+1f46a122-648,LinkedIn ABM Campaign,email,6334.23,18035.28,10,2025-04-27,marketing_platform
+32b65198-90a,Enterprise Webinar Series,linkedin,5141.96,5271.39,40,2025-04-27,marketing_platform
+30352af1-d9f,Product-Led Growth Retargeting,events,3817.5,6820.1,54,2025-04-27,marketing_platform
+921ed936-fe5,Email Nurture - Enterprise,email,9289.23,19783.11,47,2025-04-27,marketing_platform
+08c0f824-250,Partner Co-Marketing,webinars,4628.28,8730.62,68,2025-04-27,marketing_platform
+8e90cec4-5f6,Customer Proof Campaign,google_ads,1923.98,2599.46,22,2025-04-27,marketing_platform
+52339807-a9c,Annual User Conference,events,8750.9,20061.48,46,2025-04-27,marketing_platform
+c945dbf7-d09,Analyst Report Sponsorship,webinars,1977.65,6538.05,1,2025-04-26,marketing_platform
+1c31e0a7-afc,RevOps Field Dinner,google_ads,717.95,347.05,26,2025-04-26,marketing_platform
+dce31d0a-ec6,Product-Led Growth Retargeting,email,4179.12,9193.62,11,2025-04-26,marketing_platform
+c9ef5402-1f5,Annual User Conference,google_ads,6383.66,18569.87,50,2025-04-26,marketing_platform
+8a26bedb-436,Partner Co-Marketing,events,3448.82,6717.42,10,2025-04-26,marketing_platform
+f4b46f8c-423,Usage Expansion Plays,webinars,1989.08,5763.3,67,2025-04-26,marketing_platform
+2398749f-efb,Competitive Takeout,webinars,6960.39,4681.52,43,2025-04-26,marketing_platform
+65c88315-362,Enterprise Webinar Series,email,514.45,277.52,32,2025-04-26,marketing_platform
+a594c42d-a11,Developer Community Events,linkedin,7047.31,9562.39,58,2025-04-26,marketing_platform
+fcb207eb-cbd,Email Nurture - Enterprise,events,6631.96,11883.78,39,2025-04-26,marketing_platform
+fa014eee-bb6,Google Ads - Brand,email,2480.32,3744.33,2,2025-04-26,marketing_platform
+2e9d6fbd-4dc,RevOps Field Dinner,linkedin,2696.66,8365.8,36,2025-04-25,marketing_platform
+f9c39613-303,Cloud Analytics Content Hub,webinars,4781.79,2787.78,70,2025-04-25,marketing_platform
+530f7792-843,Product-Led Growth Retargeting,google_ads,9156.38,10117.08,30,2025-04-25,marketing_platform
+655c9872-08b,Email Nurture - Enterprise,email,4036.99,5403.23,14,2025-04-25,marketing_platform
+f3ddbe02-912,Finance Leader Roundtable,google_ads,5650.71,17373.21,50,2025-04-25,marketing_platform
+5524d86b-4bb,Annual User Conference,webinars,1252.96,3653.12,65,2025-04-25,marketing_platform
+9a3681fb-437,LinkedIn ABM Campaign,events,7224.02,22374.99,1,2025-04-25,marketing_platform
+6c9ad8ca-fa3,Usage Expansion Plays,webinars,1351.41,3906.54,26,2025-04-25,marketing_platform
+e7b13a63-135,Enterprise Webinar Series,events,8555.99,4750.43,20,2025-04-25,marketing_platform
+0b84378f-7da,Developer Community Events,email,2686.52,8766.58,72,2025-04-25,marketing_platform
+4eecce46-24f,Cloud Analytics Content Hub,events,4958.98,7347.73,74,2025-04-24,marketing_platform
+71f664e0-21c,Email Nurture - Enterprise,google_ads,2538.87,1216.95,46,2025-04-24,marketing_platform
+183a68e1-419,Partner Co-Marketing,content_marketing,7149.24,15891.66,62,2025-04-24,marketing_platform
+d7a67489-223,Competitive Takeout,webinars,7301.05,24273.13,55,2025-04-24,marketing_platform
+bc3f2197-767,Product-Led Growth Retargeting,content_marketing,8763.71,23740.83,57,2025-04-24,marketing_platform
+5acdf348-277,Annual User Conference,content_marketing,5013.28,7614.71,54,2025-04-24,marketing_platform
+235968d5-5a2,Enterprise Webinar Series,events,4162.16,7601.53,8,2025-04-24,marketing_platform
+1af8b4a6-040,Usage Expansion Plays,webinars,8250.67,11423.46,13,2025-04-23,marketing_platform
+53e21cfd-7a2,Competitive Takeout,email,4390.05,3416.16,3,2025-04-23,marketing_platform
+28008d97-bfb,Google Ads - Product,email,630.64,1532.52,65,2025-04-23,marketing_platform
+0f1b2177-836,Enterprise Webinar Series,email,3930.02,5273.82,35,2025-04-23,marketing_platform
+88b0eef4-752,Customer Proof Campaign,events,803.51,1043.94,7,2025-04-23,marketing_platform
+ae4ba598-f19,Email Nurture - Enterprise,linkedin,7301.42,12610.66,24,2025-04-23,marketing_platform
+3c34447c-95f,Email Nurture - Enterprise,linkedin,1323.44,869.02,15,2025-04-22,marketing_platform
+aaac70a6-457,Annual User Conference,linkedin,8658.3,18411.35,54,2025-04-22,marketing_platform
+16f649d5-f70,Google Ads - Brand,events,6604.59,7360.29,29,2025-04-22,marketing_platform
+5f61d27a-76a,Customer Proof Campaign,webinars,5157.57,7700.99,3,2025-04-22,marketing_platform
+ca2b10b5-a7b,LinkedIn ABM Campaign,content_marketing,4118.02,7226.03,54,2025-04-22,marketing_platform
+79ea5da8-3eb,Partner Co-Marketing,google_ads,7879.64,24105.07,56,2025-04-22,marketing_platform
+523ac576-25f,Finance Leader Roundtable,webinars,3655.35,6901.56,45,2025-04-22,marketing_platform
+9bec2a44-651,Cloud Analytics Content Hub,webinars,9140.02,3305.34,59,2025-04-22,marketing_platform
+022e19c4-ff2,RevOps Field Dinner,events,518.52,994.27,34,2025-04-22,marketing_platform
+e6e4b618-dac,Analyst Report Sponsorship,linkedin,5963.26,7956.83,48,2025-04-22,marketing_platform
+e58ad9cb-952,Competitive Takeout,content_marketing,807.12,1159.79,23,2025-04-22,marketing_platform
+5b83cf1e-36e,Customer Proof Campaign,email,1055.66,2336.91,63,2025-04-21,marketing_platform
+4b823a05-12d,Enterprise Webinar Series,webinars,5487.63,2655.4,60,2025-04-21,marketing_platform
+7e433653-ed8,Partner Co-Marketing,content_marketing,9012.81,20250.74,65,2025-04-21,marketing_platform
+148697c5-11e,RevOps Field Dinner,events,7184.79,6809.72,57,2025-04-21,marketing_platform
+be87f574-339,LinkedIn ABM Campaign,content_marketing,3300.11,6469.63,23,2025-04-21,marketing_platform
+a6335648-7fe,Email Nurture - Enterprise,content_marketing,7267.58,3660.88,66,2025-04-21,marketing_platform
+5054a968-ef7,Finance Leader Roundtable,google_ads,5321.29,14111.56,24,2025-04-21,marketing_platform
+4b5488ec-7f7,Google Ads - Brand,webinars,7923.02,12262.48,75,2025-04-21,marketing_platform
+b3ba383c-063,Cloud Analytics Content Hub,linkedin,8537.69,16208.89,48,2025-04-21,marketing_platform
+98d31f91-682,Annual User Conference,events,7038.85,20671.71,52,2025-04-21,marketing_platform
+8d824eef-29f,Enterprise Webinar Series,events,2767.91,3354.96,6,2025-04-20,marketing_platform
+bb7300d3-c82,Competitive Takeout,events,6919.25,14363.59,68,2025-04-20,marketing_platform
+0c164d7f-8cd,Product-Led Growth Retargeting,google_ads,5665.98,7573.35,34,2025-04-20,marketing_platform
+9212b330-1c1,Email Nurture - Enterprise,content_marketing,3528.28,11343.54,67,2025-04-20,marketing_platform
+4d019bb6-a7a,Customer Proof Campaign,content_marketing,7559.87,16139.52,3,2025-04-20,marketing_platform
+422b0681-558,Usage Expansion Plays,events,3599.03,9379.15,46,2025-04-20,marketing_platform
+09bab820-2c8,Analyst Report Sponsorship,linkedin,5138.5,15138.11,13,2025-04-20,marketing_platform
+e1770e87-68a,Annual User Conference,events,1228.24,1423.97,39,2025-04-20,marketing_platform
+28cf2f8e-afd,RevOps Field Dinner,linkedin,1281.61,2187.51,28,2025-04-20,marketing_platform
+89938c83-352,Developer Community Events,email,7443.4,8599.56,4,2025-04-20,marketing_platform
+56b15d45-3ed,LinkedIn ABM Campaign,linkedin,982.78,1475.41,6,2025-04-19,marketing_platform
+a8aac48b-661,Developer Community Events,content_marketing,6200.78,11094.84,14,2025-04-19,marketing_platform
+381ea80e-952,Product-Led Growth Retargeting,content_marketing,5299.63,8701.93,10,2025-04-19,marketing_platform
+19eeaf36-810,Competitive Takeout,events,1384.0,773.52,48,2025-04-19,marketing_platform
+5ab13439-751,Customer Proof Campaign,webinars,3651.71,4457.76,45,2025-04-19,marketing_platform
+b540b8ff-14d,Finance Leader Roundtable,events,5656.95,8550.32,63,2025-04-19,marketing_platform
+4e6ea725-d03,Annual User Conference,webinars,927.32,1812.41,52,2025-04-18,marketing_platform
+1408d981-8e8,Customer Proof Campaign,events,9033.16,24279.45,31,2025-04-18,marketing_platform
+66aab495-049,RevOps Field Dinner,webinars,4054.0,7910.7,20,2025-04-18,marketing_platform
+575318c9-205,Developer Community Events,events,974.93,2406.7,28,2025-04-18,marketing_platform
+a45197d3-a51,Google Ads - Brand,webinars,699.2,1500.69,39,2025-04-18,marketing_platform
+f00b7bd3-117,Google Ads - Product,content_marketing,1835.98,5085.76,47,2025-04-18,marketing_platform
+fb129972-6ae,Enterprise Webinar Series,email,2879.64,5420.32,59,2025-04-18,marketing_platform
+41d09900-f2a,LinkedIn ABM Campaign,events,1696.26,1879.73,32,2025-04-17,marketing_platform
+1e138b39-f59,Cloud Analytics Content Hub,linkedin,5378.54,11027.05,14,2025-04-17,marketing_platform
+2f046fc0-d14,Developer Community Events,webinars,352.89,655.23,22,2025-04-17,marketing_platform
+639a645c-24f,Annual User Conference,linkedin,5760.88,3928.82,27,2025-04-17,marketing_platform
+8e0cfd62-592,Usage Expansion Plays,webinars,344.13,421.85,31,2025-04-17,marketing_platform
+863253f3-33d,Product-Led Growth Retargeting,webinars,5809.59,5232.08,19,2025-04-17,marketing_platform
+9199691b-b8a,Email Nurture - Enterprise,webinars,8877.58,9646.9,29,2025-04-17,marketing_platform
+db6df9c4-ee4,Competitive Takeout,webinars,3642.71,4075.16,74,2025-04-17,marketing_platform
+f7c83821-2b9,Google Ads - Product,events,1384.11,4701.54,70,2025-04-17,marketing_platform
+c5c24838-ba4,RevOps Field Dinner,google_ads,8263.33,27157.28,23,2025-04-17,marketing_platform
+221c05cd-349,LinkedIn ABM Campaign,google_ads,7406.85,3124.85,70,2025-04-16,marketing_platform
+a2a5a636-c98,Usage Expansion Plays,content_marketing,1112.63,704.43,53,2025-04-16,marketing_platform
+219e9f5d-601,RevOps Field Dinner,webinars,5493.83,18156.99,59,2025-04-16,marketing_platform
+eb7289f8-0ac,Cloud Analytics Content Hub,google_ads,5161.4,10128.64,39,2025-04-16,marketing_platform
+d8c4ee53-3d7,Product-Led Growth Retargeting,events,3525.28,6091.68,70,2025-04-16,marketing_platform
+4fd69f37-054,Google Ads - Brand,events,6728.92,17216.84,25,2025-04-16,marketing_platform
+ffc3dade-0bd,Customer Proof Campaign,events,361.95,1000.48,73,2025-04-16,marketing_platform
+2141b892-c19,Annual User Conference,events,3776.16,12277.64,18,2025-04-15,marketing_platform
+8b2def24-674,Email Nurture - Enterprise,email,5446.54,12956.74,12,2025-04-15,marketing_platform
+4adeffda-426,Partner Co-Marketing,linkedin,7539.16,6679.49,17,2025-04-15,marketing_platform
+3dc06e79-6e9,Customer Proof Campaign,webinars,1302.06,1159.29,74,2025-04-15,marketing_platform
+1685efa3-c93,Competitive Takeout,content_marketing,8759.45,26539.07,47,2025-04-15,marketing_platform
+dfcb5da2-39c,Analyst Report Sponsorship,content_marketing,3487.47,9427.54,67,2025-04-15,marketing_platform
+f6fc95cf-872,Enterprise Webinar Series,email,5332.48,2758.04,13,2025-04-15,marketing_platform
+9138d371-9e4,Usage Expansion Plays,content_marketing,8149.88,14361.7,44,2025-04-14,marketing_platform
+ba5d80c9-2e3,Email Nurture - Enterprise,email,1809.82,4017.34,30,2025-04-14,marketing_platform
+cdd1ace7-bd6,Product-Led Growth Retargeting,email,7391.24,15986.65,15,2025-04-14,marketing_platform
+5511bd2c-2e2,Competitive Takeout,webinars,8764.39,29337.39,12,2025-04-14,marketing_platform
+23e8f4bf-c52,Developer Community Events,webinars,4275.6,8190.43,7,2025-04-14,marketing_platform
+aa5af189-f5b,Analyst Report Sponsorship,google_ads,4608.49,4251.03,68,2025-04-14,marketing_platform
+fa68e3ec-7b2,Enterprise Webinar Series,google_ads,3177.54,2195.24,70,2025-04-14,marketing_platform
+84298b82-3fa,Customer Proof Campaign,events,4251.21,6782.81,21,2025-04-14,marketing_platform
+129a7a98-84e,LinkedIn ABM Campaign,google_ads,5819.75,12223.56,47,2025-04-14,marketing_platform
+269a713c-968,Enterprise Webinar Series,email,7443.04,10857.22,25,2025-04-13,marketing_platform
+b2b7859a-bb7,LinkedIn ABM Campaign,linkedin,8981.59,13005.26,35,2025-04-13,marketing_platform
+705456a4-a39,Google Ads - Brand,content_marketing,4578.67,4966.75,59,2025-04-13,marketing_platform
+6febc55d-2c0,Product-Led Growth Retargeting,google_ads,3679.22,7103.11,69,2025-04-13,marketing_platform
+a151e67b-3f4,Annual User Conference,events,2398.7,6609.36,39,2025-04-13,marketing_platform
+a58c124a-ab3,Email Nurture - Enterprise,events,5985.54,7060.26,24,2025-04-13,marketing_platform
+ae25567c-927,Finance Leader Roundtable,email,1229.27,1342.42,59,2025-04-13,marketing_platform
+e83f7cd0-7af,Cloud Analytics Content Hub,linkedin,5567.39,17019.7,9,2025-04-13,marketing_platform
+141f6e41-f13,Developer Community Events,google_ads,5341.79,5916.21,46,2025-04-13,marketing_platform
+b5df120b-0c9,RevOps Field Dinner,webinars,8725.92,13847.43,67,2025-04-13,marketing_platform
+aacce0e9-f05,Product-Led Growth Retargeting,content_marketing,7301.38,23261.45,37,2025-04-12,marketing_platform
+87139b49-41c,Enterprise Webinar Series,google_ads,4420.88,4993.15,27,2025-04-12,marketing_platform
+c5dded87-e5d,Annual User Conference,events,5615.56,11895.11,19,2025-04-12,marketing_platform
+7a5b1dc3-c1e,Developer Community Events,email,7565.99,16485.84,43,2025-04-12,marketing_platform
+39b42e6a-26d,Finance Leader Roundtable,events,9384.5,20830.28,31,2025-04-12,marketing_platform
+babefc5d-6aa,Partner Co-Marketing,linkedin,7561.56,18384.45,2,2025-04-12,marketing_platform
+636694ad-439,Usage Expansion Plays,google_ads,2145.36,6946.7,9,2025-04-12,marketing_platform
+d31e32ef-26a,Google Ads - Brand,email,2082.93,4774.72,9,2025-04-12,marketing_platform
+04d71a7b-c62,RevOps Field Dinner,linkedin,7864.06,4401.43,57,2025-04-12,marketing_platform
+SPEND-DUP-1-A,Duplicated Spend Control 1,linkedin,5000,7000.0,11,2025-07-08,marketing_platform
+SPEND-DUP-1-B,Duplicated Spend Control 1,linkedin,5000,7000.0,11,2025-07-08,marketing_platform
+SPEND-DUP-2-A,Duplicated Spend Control 2,google_ads,4000,5600.0,12,2025-07-08,marketing_platform
+SPEND-DUP-2-B,Duplicated Spend Control 2,google_ads,4000,5600.0,12,2025-07-08,marketing_platform
+SPEND-DUP-3-A,Duplicated Spend Control 3,linkedin,3000,4200.0,13,2025-07-08,marketing_platform
+SPEND-DUP-3-B,Duplicated Spend Control 3,linkedin,3000,4200.0,13,2025-07-08,marketing_platform
+SPEND-DUP-4-A,Duplicated Spend Control 4,google_ads,2500,3500.0,14,2025-07-08,marketing_platform
+SPEND-DUP-4-B,Duplicated Spend Control 4,google_ads,2500,3500.0,14,2025-07-08,marketing_platform
+SPEND-DUP-5-A,Duplicated Spend Control 5,linkedin,2000,2800.0,15,2025-07-08,marketing_platform
+SPEND-DUP-5-B,Duplicated Spend Control 5,linkedin,2000,2800.0,15,2025-07-08,marketing_platform
+SPEND-DUP-6-A,Duplicated Spend Control 6,google_ads,1500,2100.0,16,2025-07-08,marketing_platform
+SPEND-DUP-6-B,Duplicated Spend Control 6,google_ads,1500,2100.0,16,2025-07-08,marketing_platform

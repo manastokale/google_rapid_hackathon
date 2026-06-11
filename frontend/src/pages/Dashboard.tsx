@@ -1,6 +1,7 @@
 import { AlertTriangle, ArrowUpRight, CircleDollarSign, DatabaseZap, LineChart, ShieldAlert } from 'lucide-react'
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { KpiCard } from '../components/KpiCard'
+import { ServiceHop, ServiceLoading } from '../components/ServiceLoading'
 import { StatusBadge } from '../components/StatusBadge'
 import { TrustGauge } from '../components/TrustGauge'
 import { dashboardApi } from '../services/api'
@@ -8,13 +9,33 @@ import { Connector, DashboardOverview } from '../types'
 import { useApi } from '../hooks/useApi'
 
 const money = (value: number) => `$${value.toLocaleString(undefined, { maximumFractionDigits: 0 })}`
+const dashboardHops: ServiceHop[] = [
+  { label: 'React UI', detail: 'Requesting overview', kind: 'ui' },
+  { label: 'FastAPI', detail: 'Joining risk services', kind: 'api' },
+  { label: 'BigQuery', detail: 'Usage and billing', kind: 'warehouse' },
+  { label: 'Trust engine', detail: 'Connector scoring', kind: 'score' },
+  { label: 'Charts', detail: 'Rendering KPIs', kind: 'render' },
+]
+
+const connectorHops: ServiceHop[] = [
+  { label: 'Fivetran', detail: 'Connector state', kind: 'connector' },
+  { label: 'BigQuery', detail: 'Metric map', kind: 'warehouse' },
+  { label: 'Dashboard', detail: 'Trust markers', kind: 'render' },
+]
 
 export function Dashboard() {
   const overview = useApi<DashboardOverview>(dashboardApi.getOverview)
   const connectors = useApi<Connector[]>(dashboardApi.getConnectors)
 
   if (overview.loading) {
-    return <div className="surface h-96 animate-pulse rounded-lg" />
+    return (
+      <ServiceLoading
+        title="Loading executive risk dashboard"
+        caption="FastAPI is combining warehouse rows, connector state, and trust scoring."
+        hops={dashboardHops}
+        className="min-h-96"
+      />
+    )
   }
   if (overview.error || !overview.data) {
     return <div className="surface rounded-lg p-6 text-rose-200">Dashboard data failed to load.</div>
@@ -40,17 +61,21 @@ export function Dashboard() {
       <section className="grid gap-6 xl:grid-cols-[360px_1fr]">
         <div className="surface rounded-lg p-6">
           <TrustGauge score={data.overall_trust_score} />
-          <div className="mt-5 flex flex-wrap gap-2">
-            {(connectors.data ?? []).map((connector) => (
-              <span
-                key={connector.connector_id}
-                title={connector.connector_name}
-                className={`h-3 w-3 rounded-full ${
-                  connector.status === 'broken' ? 'bg-rose-400' : connector.status === 'delayed' || connector.schema_changes_detected ? 'bg-amber-300' : 'bg-emerald-400'
-                }`}
-              />
-            ))}
-          </div>
+          {connectors.loading ? (
+            <ServiceLoading title="Checking connector graph" hops={connectorHops} compact framed={false} className="mt-5" />
+          ) : (
+            <div className="mt-5 flex flex-wrap gap-2">
+              {(connectors.data ?? []).map((connector) => (
+                <span
+                  key={connector.connector_id}
+                  title={connector.connector_name}
+                  className={`h-3 w-3 rounded-full ${
+                    connector.status === 'broken' ? 'bg-rose-400' : connector.status === 'delayed' || connector.schema_changes_detected ? 'bg-amber-300' : 'bg-emerald-400'
+                  }`}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="surface rounded-lg p-6">
@@ -103,4 +128,3 @@ export function Dashboard() {
     </div>
   )
 }
-

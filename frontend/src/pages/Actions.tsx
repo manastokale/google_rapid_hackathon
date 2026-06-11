@@ -1,9 +1,18 @@
 import { useMemo, useState } from 'react'
 import { Filter } from 'lucide-react'
 import { ActionItem } from '../components/ActionItem'
+import { ServiceHop, ServiceLoading } from '../components/ServiceLoading'
 import { actionsApi } from '../services/api'
 import { ActionItem as ActionItemType } from '../types'
 import { useApi } from '../hooks/useApi'
+
+const actionHops: ServiceHop[] = [
+  { label: 'React UI', detail: 'Requesting queue', kind: 'ui' },
+  { label: 'FastAPI', detail: 'Collecting incidents', kind: 'api' },
+  { label: 'BigQuery', detail: 'Risk tables', kind: 'warehouse' },
+  { label: 'Scoring', detail: 'Severity ranking', kind: 'score' },
+  { label: 'Queue', detail: 'Owner actions', kind: 'queue' },
+]
 
 export function Actions() {
   const queue = useApi<{ actions: ActionItemType[] }>(actionsApi.getQueue)
@@ -20,14 +29,26 @@ export function Actions() {
   }, [actions, severity, type])
 
   const acknowledge = async (id: string) => {
-    await actionsApi.acknowledge(id)
+    const response = await actionsApi.acknowledge(id)
+    if (id.startsWith('connector-')) {
+      const refreshed = await actionsApi.getQueue()
+      queue.setData(refreshed.data)
+      return
+    }
     queue.setData({
-      actions: actions.map((action) => (action.id === id ? { ...action, status: 'acknowledged' } : action)),
+      actions: actions.map((action) => (action.id === id ? { ...action, status: response.data.status } : action)),
     })
   }
 
   if (queue.loading) {
-    return <div className="surface h-96 animate-pulse rounded-lg" />
+    return (
+      <ServiceLoading
+        title="Building action queue"
+        caption="Revenue incidents are being ranked by impact, owner, and connector risk."
+        hops={actionHops}
+        className="min-h-96"
+      />
+    )
   }
 
   return (

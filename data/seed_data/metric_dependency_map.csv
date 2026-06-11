@@ -1,0 +1,21 @@
+metric_id,metric_name,source_tables,source_connectors,owner,dashboard_name,business_criticality
+MET-001,Monthly Recurring Revenue (MRR),"accounts,invoices,contracts","stripe_billing,salesforce_crm,contract_management",Finance / RevOps,Executive Revenue Dashboard,critical
+MET-002,Net Revenue Retention (NRR),"accounts,invoices,contracts,product_usage_events","stripe_billing,salesforce_crm,product_telemetry,contract_management",Finance / RevOps,Executive Revenue Dashboard,critical
+MET-003,Underbilling Exposure,"product_usage_events,invoices,contracts","product_telemetry,stripe_billing,contract_management,payment_gateway",Finance / Billing Ops,Billing Accuracy Dashboard,critical
+MET-004,Expansion Pipeline,"product_usage_events,opportunities,accounts","product_telemetry,salesforce_crm,account_master",Sales / RevOps,Sales Pipeline Dashboard,high
+MET-005,Customer Health Score,"customer_health,support_tickets,product_usage_events","cs_platform,zendesk_support,product_telemetry",Customer Success,CS Health Dashboard,high
+MET-006,Customer Acquisition Cost (CAC),"marketing_spend,opportunities","marketing_platform,salesforce_crm,web_analytics",Marketing / Finance,Marketing ROI Dashboard,medium
+MET-007,Churn Risk Exposure,"customer_health,accounts,support_tickets","cs_platform,account_master,zendesk_support",Customer Success,CS Health Dashboard,high
+MET-008,Usage Growth Rate,"product_usage_events,accounts","product_telemetry,account_master",Product,Product Analytics Dashboard,medium
+MET-009,Revenue at Risk,"accounts,invoices,customer_health,product_usage_events,contracts","stripe_billing,cs_platform,product_telemetry,salesforce_crm,contract_management",Finance / Leadership,Executive Revenue Dashboard,critical
+MET-010,Cost Leakage,marketing_spend,"marketing_platform,web_analytics",Marketing / Finance,Marketing ROI Dashboard,medium
+MET-011,Overage Capture Rate,"product_usage_events,invoices,contracts","product_telemetry,stripe_billing,contract_management",Billing Ops,Billing Accuracy Dashboard,critical
+MET-012,Expansion Readiness,"product_usage_events,customer_health,opportunities","product_telemetry,cs_platform,salesforce_crm",Sales / CS,Sales Pipeline Dashboard,high
+MET-013,Connector SLA Compliance,fivetran_connector_status,data_quality_rules,Data Platform,Data Trust Dashboard,high
+MET-014,Payment Collection Risk,"invoices,accounts","stripe_billing,payment_gateway,account_master",Finance,Executive Revenue Dashboard,medium
+MET-015,Renewal Forecast,"contracts,opportunities,customer_health","contract_management,salesforce_crm,cs_platform",RevOps,Renewal Forecast Dashboard,high
+MET-016,Product Adoption,"customer_health,product_usage_events","cs_platform,product_telemetry",Product / CS,Product Analytics Dashboard,medium
+MET-017,Support Escalation Risk,"support_tickets,customer_health","zendesk_support,cs_platform",Support / CS,CS Health Dashboard,medium
+MET-018,Campaign ROI,"marketing_spend,opportunities","marketing_platform,web_analytics,salesforce_crm",Marketing,Marketing ROI Dashboard,medium
+MET-019,Contract Entitlement Accuracy,"contracts,accounts","contract_management,product_catalog,account_master",Revenue Systems,Billing Accuracy Dashboard,high
+MET-020,Data Freshness,"fivetran_connector_status,metric_dependency_map","data_quality_rules,product_telemetry,marketing_platform,cs_platform",Data Platform,Data Trust Dashboard,critical

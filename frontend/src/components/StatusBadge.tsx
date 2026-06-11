@@ -13,11 +13,12 @@ const statusMap: Record<string, string> = {
   medium: 'border-amber-400/30 bg-amber-500/10 text-amber-300',
   low: 'border-blue-400/30 bg-blue-500/10 text-blue-300',
   acknowledged: 'border-emerald-400/30 bg-emerald-500/10 text-emerald-300',
+  repaired: 'border-emerald-400/30 bg-emerald-500/10 text-emerald-300',
   new: 'border-violet-400/30 bg-violet-500/10 text-violet-300',
 }
 
 function Icon({ status }: StatusBadgeProps) {
-  if (status === 'connected' || status === 'acknowledged') return <CheckCircle2 className="h-3.5 w-3.5" />
+  if (status === 'connected' || status === 'acknowledged' || status === 'repaired') return <CheckCircle2 className="h-3.5 w-3.5" />
   if (status === 'broken' || status === 'critical') return <XCircle className="h-3.5 w-3.5" />
   if (status === 'delayed' || status === 'high' || status === 'medium') return <AlertTriangle className="h-3.5 w-3.5" />
   return <CircleDot className="h-3.5 w-3.5" />
@@ -32,4 +33,3 @@ export function StatusBadge({ status }: StatusBadgeProps) {
     </span>
   )
 }
-

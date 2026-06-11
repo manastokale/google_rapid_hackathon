@@ -1,0 +1,14 @@
+[
+  {"name": "account_id", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "account_name", "type": "STRING"},
+  {"name": "tier", "type": "STRING"},
+  {"name": "arr", "type": "FLOAT64"},
+  {"name": "mrr", "type": "FLOAT64"},
+  {"name": "pricing_model", "type": "STRING"},
+  {"name": "owner", "type": "STRING"},
+  {"name": "csm", "type": "STRING"},
+  {"name": "segment", "type": "STRING"},
+  {"name": "status", "type": "STRING"},
+  {"name": "created_at", "type": "TIMESTAMP"}
+]
+

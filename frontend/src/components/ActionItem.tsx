@@ -27,7 +27,7 @@ export function ActionItem({ action, onAcknowledge }: ActionItemProps) {
       <td className="px-4 py-4 text-right">
         <button
           className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/10 bg-white/5 text-slate-200 hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40"
-          disabled={action.status === 'acknowledged'}
+          disabled={action.status === 'acknowledged' || action.status === 'repaired'}
           onClick={() => onAcknowledge(action.id)}
           title="Acknowledge"
         >
@@ -37,4 +37,3 @@ export function ActionItem({ action, onAcknowledge }: ActionItemProps) {
     </tr>
   )
 }
-

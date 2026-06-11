@@ -8,5 +8,6 @@ pydantic>=2.10.0
 pydantic-settings>=2.6.0
 httpx>=0.28.0
 python-dotenv>=1.0.0
+tqdm>=4.66.0
 mcp>=1.0.0
 pytest>=8.3.0

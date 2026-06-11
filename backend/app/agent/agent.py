@@ -11,11 +11,23 @@ async def detect_underbilling() -> dict:
 
     accounts = await get_underbilled_accounts()
     total_exposure = sum(account.get("underbilling_gap", 0) for account in accounts)
+    impacted_accounts = [account.get("account_name") for account in accounts[:5]]
     return {
         "underbilled_accounts": accounts,
         "total_exposure": round(total_exposure, 2),
         "account_count": len(accounts),
-        "root_cause": "product_telemetry connector is stale by 19 hours, so usage is not flowing to billing.",
+        "evidence_checked": [
+            "analytics.underbilling_risk",
+            "product usage totals",
+            "contract allowances",
+            "invoice overage amounts",
+        ],
+        "affected_accounts": impacted_accounts,
+        "root_cause": accounts[0].get("reason", "Usage exceeded contract allowance while billed overage lagged expected charges")
+        if accounts
+        else "No active underbilling exposure found in analytics views",
+        "recommended_owner": "Finance / Billing Ops",
+        "next_action": "Recompute current-period overages, validate invoice line items, and issue corrected invoices.",
     }
 
 
@@ -25,10 +37,23 @@ async def detect_expansion_gaps() -> dict:
 
     accounts = await get_expansion_gap_accounts()
     total_gap = sum(account.get("estimated_annual_expansion", 0) for account in accounts)
+    impacted_accounts = [account.get("account_name") for account in accounts[:5]]
     return {
         "expansion_gap_accounts": accounts,
         "total_expansion_value": round(total_gap, 2),
         "account_count": len(accounts),
+        "evidence_checked": [
+            "analytics.expansion_gaps",
+            "product usage totals",
+            "contract allowances",
+            "open CRM expansion opportunities",
+        ],
+        "affected_accounts": impacted_accounts,
+        "root_cause": accounts[0].get("reason", "High usage accounts lack open expansion opportunities")
+        if accounts
+        else "No expansion gap found in analytics views",
+        "recommended_owner": "Sales / RevOps",
+        "next_action": "Create or reopen expansion opportunities and assign each to the account owner.",
         "recommendation": "Create Salesforce expansion opportunities and assign each account owner.",
     }
 
@@ -39,11 +64,16 @@ async def check_connector_health() -> dict:
 
     all_connectors = await get_connector_statuses()
     unhealthy = await get_stale_connectors(threshold_hours=1)
+    impacted_connectors = [connector.get("connector_name") for connector in unhealthy[:6]]
     return {
         "all_connectors": all_connectors,
         "unhealthy_connectors": unhealthy,
         "total_connectors": len(all_connectors),
         "unhealthy_count": len(unhealthy),
+        "evidence_checked": ["analytics.connector_health", "metric dependency map", "connector sync freshness"],
+        "affected_connectors": impacted_connectors,
+        "recommended_owner": "Data Platform",
+        "next_action": "Repair broken connectors, clear delayed syncs, and rerun downstream dashboard refreshes.",
     }
 
 
@@ -98,28 +128,9 @@ async def get_metric_trust_score(metric_name: str) -> dict:
 
 async def get_dashboard_trust_assessment(dashboard_name: str) -> dict:
     """Assess whether a dashboard can be trusted."""
-    from app.services.bigquery_service import get_metric_dependencies
+    from app.services.bigquery_service import get_dashboard_trust_summary
 
-    all_metrics = await get_metric_dependencies()
-    dashboard_metrics = [
-        metric for metric in all_metrics if dashboard_name.lower() in metric.get("dashboard_name", "").lower()
-    ] or all_metrics
-    results = [await get_metric_trust_score(metric["metric_name"]) for metric in dashboard_metrics]
-    all_issues: list[str] = []
-    for result in results:
-        all_issues.extend(result.get("issues", []))
-
-    score = 62 if "revenue" in dashboard_name.lower() else round(
-        sum(result.get("trust_score", 0) for result in results) / len(results)
-    )
-    return {
-        "dashboard_name": dashboard_name,
-        "overall_trust_score": score,
-        "metric_scores": results,
-        "total_issues": len(all_issues),
-        "issues": all_issues,
-        "verdict": "TRUSTWORTHY" if score >= 80 else "UNRELIABLE - action required" if score >= 50 else "CRITICAL - do not use for decisions",
-    }
+    return await get_dashboard_trust_summary(dashboard_name)
 
 
 async def get_executive_summary() -> dict:
@@ -133,7 +144,8 @@ SYSTEM_INSTRUCTION = """You are MarginTrust AI, an intelligent revenue leakage d
 
 Always quantify dollar impact, identify the responsible owner, and recommend next-best actions.
 When assessing dashboard trust, check upstream connectors and explain downstream metric impact.
-Use structured sections: Finding, Dollar Impact, Root Cause, Affected Accounts, Recommended Actions, Trust Assessment.
+Use only tool outputs for numbers; never invent static placeholder values.
+Use structured sections: Finding, Evidence Checked, Affected Accounts/Connectors, Dollar Impact, Root Cause, Recommended Owner, Next Action, Confidence/Trust Score.
 """
 
 
@@ -154,4 +166,3 @@ def create_agent():
             get_executive_summary,
         ],
     )
-

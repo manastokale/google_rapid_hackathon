@@ -1,0 +1,11 @@
+[
+  {"name": "spend_id", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "campaign_name", "type": "STRING"},
+  {"name": "channel", "type": "STRING"},
+  {"name": "spend_amount", "type": "FLOAT64"},
+  {"name": "attributed_revenue", "type": "FLOAT64"},
+  {"name": "leads_generated", "type": "INT64"},
+  {"name": "spend_date", "type": "DATE"},
+  {"name": "source_system", "type": "STRING"}
+]
+

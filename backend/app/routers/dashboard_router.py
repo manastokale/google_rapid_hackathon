@@ -10,6 +10,8 @@ from app.services.bigquery_service import (
     get_metric_dependencies,
     get_stale_connectors,
     get_underbilled_accounts,
+    repair_broken_connectors,
+    repair_connector,
 )
 
 router = APIRouter()
@@ -28,6 +30,21 @@ async def connectors():
 @router.get("/connectors/unhealthy")
 async def unhealthy_connectors():
     return await get_stale_connectors()
+
+
+@router.post("/connectors/repair-broken")
+async def repair_broken():
+    return await repair_broken_connectors()
+
+
+@router.post("/connectors/{connector_name}/repair")
+async def repair_one_connector(connector_name: str):
+    repair_connector(connector_name)
+    connectors = await get_connector_statuses()
+    for connector in connectors:
+        if connector["connector_name"] == connector_name or connector["connector_id"] == connector_name:
+            return connector
+    return {"error": f"Connector {connector_name} not found"}
 
 
 @router.get("/underbilling")
@@ -53,4 +70,3 @@ async def metric_trust(metric_name: str):
 @router.get("/trust")
 async def dashboard_trust(name: str = "Executive Revenue Dashboard"):
     return await get_dashboard_trust_assessment(name)
-

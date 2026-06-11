@@ -80,8 +80,9 @@ async def get_action_queue():
     priority += 1
 
     for connector in await get_stale_connectors():
+        action_id = f"connector-{connector['connector_name']}"
         actions.append({
-            "id": f"action-{priority}",
+            "id": action_id,
             "priority": priority,
             "issue_type": "connector_health",
             "description": f"Connector '{connector['connector_name']}' is {connector['status']}: {connector.get('error_message', 'investigate')}",
@@ -89,7 +90,7 @@ async def get_action_queue():
             "severity": "high" if connector["status"] == "broken" else "medium",
             "owner": connector.get("owner", "Data Team"),
             "recommended_action": f"Fix connector '{connector['connector_name']}' and backfill affected tables",
-            "status": action_store.get(f"action-{priority}", "new"),
+            "status": action_store.get(action_id, "new"),
         })
         priority += 1
 
@@ -99,5 +100,10 @@ async def get_action_queue():
 @router.post("/{action_id}/acknowledge")
 async def acknowledge_action(action_id: str, _: ActionAck | None = None):
     action_store[action_id] = "acknowledged"
-    return {"action_id": action_id, "status": "acknowledged"}
+    if action_id.startswith("connector-"):
+        from app.services.bigquery_service import repair_connector
 
+        repair_connector(action_id.removeprefix("connector-"))
+        action_store[action_id] = "repaired"
+        return {"action_id": action_id, "status": "repaired"}
+    return {"action_id": action_id, "status": "acknowledged"}

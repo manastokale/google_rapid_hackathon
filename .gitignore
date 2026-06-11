@@ -7,7 +7,13 @@ build/
 .eggs/
 venv/
 .venv/
-data/
+data/*
+!data/generate_seed_data.py
+!data/load_to_bigquery.py
+!data/schemas/
+!data/schemas/*.json
+!data/seed_data/
+!data/seed_data/*.csv
 *.env
 
 # Node
@@ -31,3 +37,4 @@ Thumbs.db
 # GCP
 *.json.key
 service-account.json
+service_account*.json

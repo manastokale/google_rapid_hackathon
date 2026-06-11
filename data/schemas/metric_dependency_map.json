@@ -1,0 +1,10 @@
+[
+  {"name": "metric_id", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "metric_name", "type": "STRING"},
+  {"name": "source_tables", "type": "STRING"},
+  {"name": "source_connectors", "type": "STRING"},
+  {"name": "owner", "type": "STRING"},
+  {"name": "dashboard_name", "type": "STRING"},
+  {"name": "business_criticality", "type": "STRING"}
+]
+

@@ -1,12 +1,14 @@
-import { Activity, Database, RefreshCcw } from 'lucide-react'
+import { Activity, Database, RefreshCcw, Wrench } from 'lucide-react'
 import { Connector } from '../types'
 import { StatusBadge } from './StatusBadge'
 
 interface ConnectorCardProps {
   connector: Connector
+  onRepair?: (connectorName: string) => void
+  repairing?: boolean
 }
 
-export function ConnectorCard({ connector }: ConnectorCardProps) {
+export function ConnectorCard({ connector, onRepair, repairing = false }: ConnectorCardProps) {
   const border =
     connector.status === 'broken'
       ? 'border-rose-400/30'
@@ -42,7 +44,16 @@ export function ConnectorCard({ connector }: ConnectorCardProps) {
           {connector.error_message}
         </p>
       ) : null}
+      {connector.status === 'broken' && onRepair ? (
+        <button
+          className="mt-4 inline-flex h-9 items-center gap-2 rounded-md border border-emerald-400/25 bg-emerald-500/10 px-3 text-sm font-semibold text-emerald-200 hover:bg-emerald-500/15 disabled:cursor-not-allowed disabled:opacity-50"
+          disabled={repairing}
+          onClick={() => onRepair(connector.connector_name)}
+        >
+          <Wrench className={`h-4 w-4 ${repairing ? 'animate-spin' : ''}`} />
+          {repairing ? 'Repairing' : 'Repair connector'}
+        </button>
+      ) : null}
     </article>
   )
 }
-

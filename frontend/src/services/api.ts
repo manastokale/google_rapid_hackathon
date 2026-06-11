@@ -8,6 +8,8 @@ export const dashboardApi = {
   getOverview: () => api.get('/dashboard/overview'),
   getConnectors: () => api.get('/dashboard/connectors'),
   getUnhealthyConnectors: () => api.get('/dashboard/connectors/unhealthy'),
+  repairConnector: (connectorName: string) => api.post(`/dashboard/connectors/${encodeURIComponent(connectorName)}/repair`),
+  repairBrokenConnectors: () => api.post('/dashboard/connectors/repair-broken'),
   getUnderbilling: () => api.get('/dashboard/underbilling'),
   getExpansionGaps: () => api.get('/dashboard/expansion-gaps'),
   getMetrics: () => api.get('/dashboard/metrics'),
@@ -22,4 +24,3 @@ export const actionsApi = {
   getQueue: () => api.get('/actions/queue'),
   acknowledge: (actionId: string) => api.post(`/actions/${actionId}/acknowledge`),
 }
-

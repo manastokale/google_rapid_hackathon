@@ -16,6 +16,8 @@ from app.config import get_settings
 
 settings = get_settings()
 os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "False")
+if settings.gemini_api_key:
+    os.environ.setdefault("GOOGLE_API_KEY", settings.gemini_api_key)
 
 _runner = None
 _session_service = None
@@ -24,11 +26,10 @@ _adk_error: str | None = None
 try:
     if settings.gemini_api_key:
         from google.adk.runners import InMemoryRunner
-        from google.adk.sessions import InMemorySessionService
 
         agent = create_agent()
-        _session_service = InMemorySessionService()
-        _runner = InMemoryRunner(agent=agent, app_name="margintrust", session_service=_session_service)
+        _runner = InMemoryRunner(agent=agent, app_name="margintrust")
+        _session_service = _runner.session_service
 except Exception as exc:
     _adk_error = str(exc)
 
@@ -38,12 +39,33 @@ def _money(value: float) -> str:
 
 
 def _accounts_table(rows: list[dict], value_key: str) -> str:
+    if not rows:
+        return "- None found"
     lines = []
     for row in rows[:5]:
         lines.append(
             f"- {row['account_name']} ({row['account_id']}): {_money(float(row[value_key]))}, owner {row['owner']}"
         )
     return "\n".join(lines)
+
+
+def _lines(items: list[str]) -> str:
+    return "\n".join(f"- {item}" for item in items) if items else "- None"
+
+
+def _top_issue(overview: dict) -> dict:
+    issues = sorted(
+        overview.get("top_issues", []),
+        key=lambda issue: float(issue.get("impact") or 0),
+        reverse=True,
+    )
+    return issues[0] if issues else {
+        "issue": "No issue found",
+        "description": "No active revenue risk found in the analytics overview",
+        "impact": 0,
+        "owner": "Data Platform",
+        "severity": "healthy",
+    }
 
 
 async def _fallback_response(user_message: str) -> str:
@@ -58,72 +80,127 @@ async def _fallback_response(user_message: str) -> str:
         return f"""## Finding
 Yes. StreamWorks Cloud has {underbilling['account_count']} underbilled accounts.
 
+## Evidence Checked
+{_lines(underbilling['evidence_checked'])}
+
+## Affected Accounts
+{_accounts_table(underbilling['underbilled_accounts'], 'underbilling_gap')}
+
 ## Dollar Impact
 {_money(underbilling['total_exposure'])} in missed overage charges.
 
 ## Root Cause
 {underbilling['root_cause']}
 
-## Affected Accounts
-{_accounts_table(underbilling['underbilled_accounts'], 'underbilling_gap')}
+## Recommended Owner
+{underbilling['recommended_owner']}
 
-## Recommended Actions
-1. Fix the product_telemetry Fivetran connector.
-2. Recompute usage overages for the current billing period.
-3. Issue corrected invoices and add a billing validation rule.
+## Next Action
+{underbilling['next_action']}
 
-## Trust Assessment
-Revenue dashboard trust is {trust['overall_trust_score']}/100 because product_telemetry is delayed and Salesforce CRM has schema drift."""
+## Confidence/Trust Score
+Executive Revenue Dashboard trust is {trust['overall_trust_score']}/100. Verdict: {trust['verdict']}."""
 
     if "expansion" in message or "crm" in message or "pipeline" in message:
         return f"""## Finding
 {expansion['account_count']} high-usage accounts are ready for expansion but missing from the CRM pipeline.
 
-## Dollar Impact
-{_money(expansion['total_expansion_value'])} in annual expansion potential.
-
-## Root Cause
-Usage exceeded 120% of contracted units, but no matching Salesforce expansion opportunities exist.
+## Evidence Checked
+{_lines(expansion['evidence_checked'])}
 
 ## Affected Accounts
 {_accounts_table(expansion['expansion_gap_accounts'], 'estimated_annual_expansion')}
 
-## Recommended Actions
-1. Create expansion opportunities for all flagged accounts.
-2. Assign each opportunity to the existing account owner.
-3. Add a RevOps alert when usage stays above 120% for three weeks.
+## Dollar Impact
+{_money(expansion['total_expansion_value'])} in annual expansion potential.
 
-## Trust Assessment
-Pipeline confidence is degraded by the salesforce_crm schema drift warning."""
+## Root Cause
+{expansion['root_cause']}
+
+## Recommended Owner
+{expansion['recommended_owner']}
+
+## Next Action
+{expansion['next_action']}
+
+## Confidence/Trust Score
+Executive Revenue Dashboard trust is {trust['overall_trust_score']}/100. Verdict: {trust['verdict']}."""
 
     if "trust" in message or "dashboard" in message or "connector" in message:
         unhealthy = connectors["unhealthy_connectors"]
         unhealthy_lines = "\n".join(
             f"- {row['connector_name']}: {row['status']}, {row.get('staleness_hours', 0)}h stale, owner {row.get('owner', 'Data Team')}"
             for row in unhealthy[:6]
-        )
+        ) or "- None found"
         return f"""## Finding
 Do not use the Executive Revenue Dashboard for final decisions today without remediation.
+
+## Evidence Checked
+{_lines(connectors['evidence_checked'])}
+
+## Affected Connectors
+{unhealthy_lines}
 
 ## Dollar Impact
 The dashboard supports {_money(overview['total_revenue_at_risk'])} in identified risk and opportunity.
 
 ## Root Cause
-Several upstream data sources are degraded.
+{trust.get('reason', 'Several upstream data sources are degraded.')}
 
-## Affected Connectors
-{unhealthy_lines}
+## Recommended Owner
+{connectors['recommended_owner']}
 
-## Recommended Actions
-1. Re-authenticate cs_platform.
-2. Resolve product_telemetry rate limiting and backfill usage.
-3. Review Salesforce schema changes before refreshing executive metrics.
+## Next Action
+{connectors['next_action']}
 
-## Trust Assessment
+## Confidence/Trust Score
 Overall trust score: {trust['overall_trust_score']}/100. Verdict: {trust['verdict']}."""
 
+    if "costing" in message or "costs us" in message or "cost us" in message or "fix first" in message or "finance" in message or "revops" in message:
+        issue = _top_issue(overview)
+        return f"""## Finding
+{issue['issue']} is the highest-dollar issue to fix first.
+
+## Evidence Checked
+- analytics.executive_overview
+- analytics.underbilling_risk
+- analytics.expansion_gaps
+- analytics.cost_leakage
+- analytics.dashboard_trust
+
+## Affected Accounts/Connectors
+See the ranked issue detail in the executive overview; this item is owned by {issue['owner']}.
+
+## Dollar Impact
+{_money(float(issue.get('impact') or 0))}. Total risk and opportunity across all tracked issues is {_money(overview['total_revenue_at_risk'])}.
+
+## Root Cause
+{issue['description']}
+
+## Recommended Owner
+{issue['owner']}
+
+## Next Action
+Start with {issue['issue'].lower()}, then refresh the executive dashboard after the owner confirms remediation.
+
+## Confidence/Trust Score
+Executive Revenue Dashboard trust score: {overview['overall_trust_score']}/100."""
+
+    top_issue = _top_issue(overview)
     return f"""## Finding
 MarginTrust AI found {_money(overview['total_revenue_at_risk'])} in revenue risk and opportunity.
+
+## Evidence Checked
+- analytics.executive_overview
+- analytics.underbilling_risk
+- analytics.expansion_gaps
+- analytics.cost_leakage
+- analytics.connector_health
+
+## Affected Accounts/Connectors
+- Underbilled accounts: {overview['underbilled_accounts_count']}
+- Expansion-gap accounts: {overview['expansion_gap_accounts_count']}
+- Stale or unhealthy connectors: {overview['stale_connectors']}
 
 ## Dollar Impact
 - Underbilling: {_money(overview['underbilling_exposure'])}
@@ -131,41 +208,46 @@ MarginTrust AI found {_money(overview['total_revenue_at_risk'])} in revenue risk
 - Cost leakage: {_money(overview['cost_leakage'])}
 
 ## Root Cause
-The highest-impact issue is stale product telemetry, followed by CRM schema drift and broken CS/marketing connectors.
+Highest-dollar issue: {top_issue['issue']} - {top_issue['description']}
 
-## Recommended Actions
-1. Fix product_telemetry and recompute invoices.
-2. Create missing expansion opportunities.
-3. Repair broken Fivetran connectors before refreshing executive dashboards.
+## Recommended Owner
+{top_issue['owner']}
 
-## Trust Assessment
+## Next Action
+Address {top_issue['issue'].lower()} first, then rerun the analytics views and refresh the backend.
+
+## Confidence/Trust Score
 Executive Revenue Dashboard trust score: {overview['overall_trust_score']}/100."""
 
 
 async def run_agent_query(user_message: str, session_id: str = "default") -> dict:
     """Send a message to the MarginTrust agent and return the response."""
     if _runner and _session_service:
-        from google.genai import types
+        try:
+            from google.genai import types
 
-        session = await _session_service.get_session(
-            app_name="margintrust", user_id="user", session_id=session_id
-        )
-        if not session:
-            session = await _session_service.create_session(
+            session = await _session_service.get_session(
                 app_name="margintrust", user_id="user", session_id=session_id
             )
+            if not session:
+                session = await _session_service.create_session(
+                    app_name="margintrust", user_id="user", session_id=session_id
+                )
 
-        user_content = types.Content(role="user", parts=[types.Part.from_text(text=user_message)])
-        final_response = ""
-        async for event in _runner.run_async(
-            user_id="user", session_id=session.id, new_message=user_content
-        ):
-            if event.is_final_response() and event.content and event.content.parts:
-                final_response += "".join(part.text or "" for part in event.content.parts)
-        return {"answer": final_response, "session_id": session.id}
+            user_content = types.Content(role="user", parts=[types.Part.from_text(text=user_message)])
+            final_response = ""
+            async for event in _runner.run_async(
+                user_id="user", session_id=session.id, new_message=user_content
+            ):
+                if event.is_final_response() and event.content and event.content.parts:
+                    final_response += "".join(part.text or "" for part in event.content.parts)
+            return {"answer": final_response, "session_id": session.id}
+        except Exception as exc:
+            answer = await _fallback_response(user_message)
+            answer += f"\n\nLocal deterministic mode is active because ADK request failed: {exc}"
+            return {"answer": answer, "session_id": session_id}
 
     answer = await _fallback_response(user_message)
     if _adk_error:
         answer += f"\n\nLocal deterministic mode is active because ADK was unavailable: {_adk_error}"
     return {"answer": answer, "session_id": session_id}
-
