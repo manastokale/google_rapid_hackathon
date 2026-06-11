@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -18,10 +19,43 @@ DATASET = f"{PROJECT_ID}.{RAW_DATASET_ID}" if PROJECT_ID else ""
 ANALYTICS_DATASET = f"{PROJECT_ID}.{ANALYTICS_DATASET_ID}" if PROJECT_ID else ""
 DEMO_NOW = datetime(2025, 7, 10, 14, 0, 0)
 _repaired_connectors: set[str] = set()
+_bigquery_disabled = False
+
+
+class BigQueryUnavailable(RuntimeError):
+    """Raised when BigQuery is configured but unavailable for this process."""
+
+
+def _credential_path() -> Path | None:
+    if not settings.google_application_credentials:
+        return None
+    path = Path(settings.google_application_credentials).expanduser()
+    if not path.is_absolute():
+        path = Path(__file__).resolve().parents[3] / path
+    return path
+
+
+def _has_service_account_json() -> bool:
+    if not settings.google_application_credentials_json:
+        return False
+    try:
+        service_account_info = json.loads(settings.google_application_credentials_json)
+    except json.JSONDecodeError:
+        return False
+    return isinstance(service_account_info, dict) and service_account_info.get("type") == "service_account"
+
+
+def _has_bigquery_credentials() -> bool:
+    if _has_service_account_json():
+        return True
+    path = _credential_path()
+    if path:
+        return path.exists()
+    return os.getenv("VERCEL") != "1"
 
 
 def _should_use_bigquery() -> bool:
-    return bool(settings.use_bigquery and PROJECT_ID)
+    return bool(settings.use_bigquery and PROJECT_ID and _has_bigquery_credentials() and not _bigquery_disabled)
 
 
 def _client():
@@ -33,10 +67,8 @@ def _client():
         credentials = service_account.Credentials.from_service_account_info(service_account_info)
         return bigquery.Client(project=PROJECT_ID, credentials=credentials)
 
-    if settings.google_application_credentials:
-        path = Path(settings.google_application_credentials).expanduser()
-        if not path.is_absolute():
-            path = Path(__file__).resolve().parents[3] / path
+    path = _credential_path()
+    if path:
         credentials = service_account.Credentials.from_service_account_file(path)
         return bigquery.Client(project=PROJECT_ID, credentials=credentials)
 
@@ -44,7 +76,12 @@ def _client():
 
 
 def _rows(query: str) -> list[dict[str, Any]]:
-    return [dict(row) for row in _client().query(query).result()]
+    global _bigquery_disabled
+    try:
+        return [dict(row) for row in _client().query(query).result()]
+    except Exception as exc:
+        _bigquery_disabled = True
+        raise BigQueryUnavailable(str(exc)) from exc
 
 
 def _analytics_rows(view_name: str, suffix: str = "") -> list[dict[str, Any]]:
@@ -135,7 +172,10 @@ async def repair_broken_connectors() -> list[dict[str, Any]]:
 async def get_connector_statuses() -> list[dict[str, Any]]:
     """Return all Fivetran connector statuses."""
     if _should_use_bigquery():
-        raw_connectors = _analytics_rows("connector_health", "ORDER BY connector_name")
+        try:
+            raw_connectors = _analytics_rows("connector_health", "ORDER BY connector_name")
+        except BigQueryUnavailable:
+            raw_connectors = load_table("fivetran_connector_status")
     else:
         raw_connectors = load_table("fivetran_connector_status")
 
@@ -177,15 +217,18 @@ async def get_stale_connectors(threshold_hours: int = 1) -> list[dict[str, Any]]
 async def get_underbilled_accounts() -> list[dict[str, Any]]:
     """Find accounts where expected overage exceeds invoiced usage amount."""
     if _should_use_bigquery():
-        rows = _analytics_rows("underbilling_risk", "ORDER BY underbilling_exposure DESC")
-        for row in rows:
-            row["owner"] = row.get("recommended_owner")
-            row["included_usage_units"] = _to_int(row.get("contract_limit"))
-            row["invoiced_usage"] = _to_float(row.get("billed_overage_amount"))
-            row["expected_overage"] = _to_float(row.get("expected_overage_charge"))
-            row["underbilling_gap"] = _to_float(row.get("underbilling_exposure"))
-            row["arr"] = _to_float(row.get("arr"))
-        return rows
+        try:
+            rows = _analytics_rows("underbilling_risk", "ORDER BY underbilling_exposure DESC")
+            for row in rows:
+                row["owner"] = row.get("recommended_owner")
+                row["included_usage_units"] = _to_int(row.get("contract_limit"))
+                row["invoiced_usage"] = _to_float(row.get("billed_overage_amount"))
+                row["expected_overage"] = _to_float(row.get("expected_overage_charge"))
+                row["underbilling_gap"] = _to_float(row.get("underbilling_exposure"))
+                row["arr"] = _to_float(row.get("arr"))
+            return rows
+        except BigQueryUnavailable:
+            pass
 
     accounts = {row["account_id"]: row for row in load_table("accounts")}
     contracts = {row["account_id"]: row for row in load_table("contracts")}
@@ -224,14 +267,17 @@ async def get_underbilled_accounts() -> list[dict[str, Any]]:
 async def get_expansion_gap_accounts() -> list[dict[str, Any]]:
     """Find high-usage accounts without expansion opportunities."""
     if _should_use_bigquery():
-        rows = _analytics_rows("expansion_gaps", "ORDER BY estimated_expansion_value DESC")
-        for row in rows:
-            row["owner"] = row.get("recommended_owner")
-            row["included_usage_units"] = _to_int(row.get("contract_limit"))
-            row["usage_pct"] = round(_to_float(row.get("usage_to_contract_ratio")) * 100, 1)
-            row["estimated_annual_expansion"] = _to_float(row.get("estimated_expansion_value"))
-            row["arr"] = _to_float(row.get("arr"))
-        return rows
+        try:
+            rows = _analytics_rows("expansion_gaps", "ORDER BY estimated_expansion_value DESC")
+            for row in rows:
+                row["owner"] = row.get("recommended_owner")
+                row["included_usage_units"] = _to_int(row.get("contract_limit"))
+                row["usage_pct"] = round(_to_float(row.get("usage_to_contract_ratio")) * 100, 1)
+                row["estimated_annual_expansion"] = _to_float(row.get("estimated_expansion_value"))
+                row["arr"] = _to_float(row.get("arr"))
+            return rows
+        except BigQueryUnavailable:
+            pass
 
     accounts = {row["account_id"]: row for row in load_table("accounts")}
     contracts = {row["account_id"]: row for row in load_table("contracts")}
@@ -266,12 +312,15 @@ async def get_expansion_gap_accounts() -> list[dict[str, Any]]:
 async def get_metric_dependencies(metric_name: str | None = None) -> list[dict[str, Any]]:
     """Return metric to data source dependency mappings."""
     if _should_use_bigquery():
-        if metric_name:
-            safe = metric_name.lower().replace("'", "\\'")
-            query = f"SELECT * FROM `{DATASET}.metric_dependency_map` WHERE LOWER(metric_name) LIKE '%{safe}%'"
-        else:
-            query = f"SELECT * FROM `{DATASET}.metric_dependency_map`"
-        return _rows(query)
+        try:
+            if metric_name:
+                safe = metric_name.lower().replace("'", "\\'")
+                query = f"SELECT * FROM `{DATASET}.metric_dependency_map` WHERE LOWER(metric_name) LIKE '%{safe}%'"
+            else:
+                query = f"SELECT * FROM `{DATASET}.metric_dependency_map`"
+            return _rows(query)
+        except BigQueryUnavailable:
+            pass
 
     metrics = load_table("metric_dependency_map")
     if metric_name:
@@ -282,13 +331,16 @@ async def get_metric_dependencies(metric_name: str | None = None) -> list[dict[s
 
 async def get_cost_leakage() -> float:
     if _should_use_bigquery():
-        rows = _rows(
-            f"""
-            SELECT COALESCE(SUM(duplicate_spend_leakage), 0) AS cost_leakage
-            FROM `{ANALYTICS_DATASET}.cost_leakage`
-            """
-        )
-        return round(_to_float(rows[0].get("cost_leakage") if rows else 0), 2)
+        try:
+            rows = _rows(
+                f"""
+                SELECT COALESCE(SUM(duplicate_spend_leakage), 0) AS cost_leakage
+                FROM `{ANALYTICS_DATASET}.cost_leakage`
+                """
+            )
+            return round(_to_float(rows[0].get("cost_leakage") if rows else 0), 2)
+        except BigQueryUnavailable:
+            pass
 
     seen: set[tuple[Any, ...]] = set()
     leakage = 0.0
@@ -312,37 +364,40 @@ def _verdict(score: int | float) -> str:
 async def get_dashboard_trust_summary(dashboard_name: str = "Executive Revenue Dashboard") -> dict[str, Any]:
     """Return a dashboard-level trust score from analytics data."""
     if _should_use_bigquery():
-        safe = dashboard_name.lower().replace("'", "\\'")
-        rows = _analytics_rows(
-            "dashboard_trust",
-            f"WHERE LOWER(dashboard_name) LIKE '%{safe}%' LIMIT 1",
-        ) or _analytics_rows("dashboard_trust", "LIMIT 1")
-        if rows:
-            row = rows[0]
-            score = _to_int(row.get("trust_score"))
-            impacted_connectors = _split_csv(row.get("impacted_connectors"))
-            overview_rows = _analytics_rows("executive_overview", "LIMIT 1")
-            dollar_impact = _to_float(overview_rows[0].get("total_revenue_at_risk")) if overview_rows else 0.0
-            issue_count = (
-                _to_int(row.get("broken_count"))
-                + _to_int(row.get("delayed_count"))
-                + _to_int(row.get("schema_drift_count"))
-                + _to_int(row.get("stale_connected_count"))
-            )
-            return {
-                "dashboard_name": row.get("dashboard_name") or dashboard_name,
-                "overall_trust_score": score,
-                "metric_scores": [],
-                "total_issues": issue_count,
-                "issues": [row.get("reason", "")],
-                "verdict": _verdict(score),
-                "reason": row.get("reason", ""),
-                "recommendation": row.get("recommendation", ""),
-                "impacted_connectors": impacted_connectors,
-                "dollar_impact": dollar_impact,
-                "total_revenue_at_risk": dollar_impact,
-                "data_label": row.get("data_label", "synthetic_demo"),
-            }
+        try:
+            safe = dashboard_name.lower().replace("'", "\\'")
+            rows = _analytics_rows(
+                "dashboard_trust",
+                f"WHERE LOWER(dashboard_name) LIKE '%{safe}%' LIMIT 1",
+            ) or _analytics_rows("dashboard_trust", "LIMIT 1")
+            if rows:
+                row = rows[0]
+                score = _to_int(row.get("trust_score"))
+                impacted_connectors = _split_csv(row.get("impacted_connectors"))
+                overview_rows = _analytics_rows("executive_overview", "LIMIT 1")
+                dollar_impact = _to_float(overview_rows[0].get("total_revenue_at_risk")) if overview_rows else 0.0
+                issue_count = (
+                    _to_int(row.get("broken_count"))
+                    + _to_int(row.get("delayed_count"))
+                    + _to_int(row.get("schema_drift_count"))
+                    + _to_int(row.get("stale_connected_count"))
+                )
+                return {
+                    "dashboard_name": row.get("dashboard_name") or dashboard_name,
+                    "overall_trust_score": score,
+                    "metric_scores": [],
+                    "total_issues": issue_count,
+                    "issues": [row.get("reason", "")],
+                    "verdict": _verdict(score),
+                    "reason": row.get("reason", ""),
+                    "recommendation": row.get("recommendation", ""),
+                    "impacted_connectors": impacted_connectors,
+                    "dollar_impact": dollar_impact,
+                    "total_revenue_at_risk": dollar_impact,
+                    "data_label": row.get("data_label", "synthetic_demo"),
+                }
+        except BigQueryUnavailable:
+            pass
 
     connectors = await get_connector_statuses()
     cost_leakage = await get_cost_leakage()
@@ -414,9 +469,12 @@ def _overview_from_analytics(row: dict[str, Any]) -> dict[str, Any]:
 async def get_dashboard_overview() -> dict[str, Any]:
     """Aggregate executive dashboard data."""
     if _should_use_bigquery():
-        rows = _analytics_rows("executive_overview", "LIMIT 1")
-        if rows:
-            return _overview_from_analytics(rows[0])
+        try:
+            rows = _analytics_rows("executive_overview", "LIMIT 1")
+            if rows:
+                return _overview_from_analytics(rows[0])
+        except BigQueryUnavailable:
+            pass
 
     underbilled = await get_underbilled_accounts()
     expansion_gap = await get_expansion_gap_accounts()

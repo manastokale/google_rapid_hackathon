@@ -16,8 +16,24 @@ from app.config import get_settings
 
 settings = get_settings()
 os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "False")
-if settings.gemini_api_key:
-    os.environ.setdefault("GOOGLE_API_KEY", settings.gemini_api_key)
+
+
+def _gemini_api_key() -> str:
+    key = settings.gemini_api_key.strip()
+    placeholder_values = {
+        "your-gemini-api-key-here",
+        "your-api-key",
+        "your-key",
+        "changeme",
+        "replace-me",
+    }
+    if not key or key.lower() in placeholder_values or key.lower().startswith("your-"):
+        return ""
+    return key
+
+
+if _gemini_api_key():
+    os.environ.setdefault("GOOGLE_API_KEY", _gemini_api_key())
 
 _runner = None
 _session_service = None
@@ -26,7 +42,7 @@ _adk_error: str | None = None
 def _get_adk_runner():
     global _runner, _session_service, _adk_error
 
-    if not settings.gemini_api_key:
+    if not _gemini_api_key():
         return None, None
     if _runner and _session_service:
         return _runner, _session_service

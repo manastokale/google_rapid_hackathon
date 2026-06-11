@@ -101,7 +101,7 @@ Open `http://localhost:5173`.
 
 This repository can deploy as one Vercel project:
 
-- React/Vite frontend is built from `frontend/` and served from `/`.
+- React/Vite frontend is built from `frontend/`, copied to root `dist/`, and served from `/`.
 - FastAPI backend is exposed through the Vercel Python function at `/api/*`.
 - The default CSV-backed demo runs without BigQuery credentials when `USE_BIGQUERY=false`.
 
@@ -125,7 +125,7 @@ Recommended Vercel environment variables:
 | `GOOGLE_APPLICATION_CREDENTIALS_JSON` | BigQuery only | Service-account JSON pasted as a Vercel secret. Prefer this over file paths on Vercel. |
 | `FRONTEND_URL` | No | Your production URL if you call the API cross-origin. Same-origin `/api` calls do not require it. |
 
-The Vercel build uses `vercel.json`, root `requirements.txt`, and `api/index.py`. Keep deploying from the repository root, not from `frontend/` or `backend/`.
+The Vercel build uses `vercel.json`, root `requirements.txt`, root `dist/`, and `api/index.py`. Keep the Vercel project root set to the repository root, not `frontend/` or `backend/`.
 
 ## Demo Prompts
 
@@ -191,5 +191,3 @@ Then leave `GOOGLE_APPLICATION_CREDENTIALS` blank and keep `BQ_PROJECT_ID` or `G
 ## License
 
 MIT
-
-
